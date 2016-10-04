@@ -8,7 +8,8 @@
 ----------------------------------*/
 .yekan { font-family: 'yekan'; }
 .homa { font-family: 'homa'; }
-
+.samim { font-family: 'samim'; }
+.samimBold { font-family: 'samim_bold' }
 /* Main Settings
 ===========================================================================*/
 /* Navigation 
@@ -60,8 +61,8 @@ h1.heading-style-6, h2.heading-style-6, h3.heading-style-6, h4.heading-style-6, 
 }
 p { 
   padding-bottom: 30px; 
-  font-family: 'homa';
-  font-size: 16px;
+  font-family: 'samim';
+  font-size: 17px;
   line-height: 35px;
   font-weight: normal;
   margin-bottom: 0;
@@ -76,23 +77,22 @@ a.link-text {
   text-decoration: underline;
   transition-duration: .3s;
 }
-mark { 
-  background-color: #f34a2e;
-  color: #fff;
-  padding: 0 5px;
-}
+mark { padding: 0 5px; }
 hr.hrSpacing {
   width: 100%;
   margin: 40px 0;
   border: 1px solid #d8d8d8;
 }
-
 /* Colors
 ===========================================================================*/
 /* Global
 -----------------------------------------*/
 body { background-color: #222; }
 .content { background-color: #efefef; }
+*::selection {
+  background: #f34a2e;
+  color: #ffffff; 
+}
 /* Content
 -----------------------------------------*/
 h1.heading-style-5, h2.heading-style-5, h3.heading-style-5, h4.heading-style-5, h5.heading-style-5, h6.heading-style-5 { color: #f34a2e; }
@@ -108,3 +108,8 @@ mark {
 
 /* @Media Queries
 ===========================================================================*/
+@media (max-width: 768px) {
+  section#provideEducation img {
+    margin-bottom: 25px;
+  }
+}
