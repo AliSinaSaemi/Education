@@ -78,10 +78,72 @@ a.link-text {
   transition-duration: .3s;
 }
 mark { padding: 0 5px; }
-hr.hrSpacing {
-  width: 100%;
-  margin: 40px 0;
-  border: 1px solid #d8d8d8;
+div.spacer {
+  background-color: #d8d8d8;
+  height: 1px; 
+  margin: 50px 0;
+}
+section#listGroups div.row div.listItems article div.item-content {
+  overflow: hidden;
+  position: relative;
+  bottom: 10px;
+}
+section#listGroups div.row div.listItems article i {
+  float: right;
+  font-size: 14px;
+  line-height: 30px;
+  color: #2d2c2f;
+  min-width: 36px;
+}
+section#listGroups div.row ol {
+  counter-reset: list;
+}
+section#listGroups div.row ol,
+section#listGroups div.row ul { 
+  margin-bottom: 30px; 
+  list-style: none;
+  font-family: 'samim';
+  line-height: 30px;
+}
+section#listGroups div.row ol li,
+section#listGroups div.row ul li {
+  font-size: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+section#listGroups div.row ol li::before{
+  color: #f34a2e;
+  content: counter(list) ".";
+  counter-increment: list;
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0px;
+} 
+section#listGroups div.row ul li::after{ 
+  position: absolute;
+  right: -18px;
+  top: 1px;
+  font-family: 'FontAwesome';
+  font-size: 7px;
+  content: '\f111'; 
+  color: #2d2c2f;
+}
+section#listGroups div.row div.listItems article div.item-content h6 a,
+section#listGroups div.row ol li a,
+section#listGroups div.row ul li a { transition: all 0.2s linear; }
+section#listGroups div.row div.listItems article div.item-content h6 a:hover,
+section#listGroups div.row ol li a:hover,
+section#listGroups div.row ul li a:hover { text-decoration: none; }
+blockquote { margin-right: 60px }
+blockquote:before { 
+  color: #f34a2e;
+  display: block;
+  content: '“';
+  font: 170px/15px 'Open Sans', sans-serif;
+  padding-top: 27px;
+}
+blockquote h6#cite {
+  font-size: 20px;
 }
 /* Colors
 ===========================================================================*/
@@ -98,14 +160,18 @@ body { background-color: #222; }
 h1.heading-style-5, h2.heading-style-5, h3.heading-style-5, h4.heading-style-5, h5.heading-style-5, h6.heading-style-5 { color: #f34a2e; }
 h1.heading-style-6, h2.heading-style-6, h3.heading-style-6, h4.heading-style-6, h5.heading-style-6, h6.heading-style-6 { color: #f34a2e; }
 p { color: #929292; }
+a.link-text,
+section#listGroups div.row div.listItems article div.item-content h6 a:hover,
+section#listGroups div.row ul li a:hover,
+section#listGroups div.row ol li a:hover,
 b { color: #f34a2e; }
-a.link-text { text-decoration: underline; }
+
+a,
 a.link-text:hover { color: #262626; }
 mark { 
   background-color: #f34a2e;
   color: #fff;
 }
-
 /* @Media Queries
 ===========================================================================*/
 @media (max-width: 768px) {
