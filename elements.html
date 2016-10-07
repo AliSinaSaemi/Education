@@ -200,53 +200,46 @@
       <div class="spacer"></div>
       
       <section id="form">
-        <h1 class="text-center">ویژگی های فرم</h1>
-        <div class="col-md-4 form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
-        </div>
-        <!-- /.inputsParts -->
-        
-        <div class="col-md-4 form-group">
-          <textarea class="form-control" id="exampleTextarea" placeholder="Password" rows="3"></textarea>
-        </div>
-        <!-- /.textAreaPart -->
-        
-        <div class="col-md-4 form-group">
-          <div class="col-md-6">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" />
-                option
-                option
-              </label>
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" />
-                Option 
-                Option 
-              </label>
+        <h1 class="heading-style-1 text-center">ثبت نام</h1>
+        <hr class="titleUnderLine">
+       
+        <div class="row">
+          <div class="col-md-4 form-group">
+            <div class="controlls">
+              <mark><lable>شما این قسمت را پر نکردید</lable></mark>
+              <input type="text" class="form-control error" id="exampleInputPassword1" placeholder="پست الکترونیکی"/>
+            </div>
+            <div class="controlls">
+              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="رمز ورود"/>
             </div>
           </div>
           
-          <div class="col-md-6">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" />
-                Check me out
-              </label>
+          <div class="col-md-4 form-group">
+            <textarea class="form-control" id="exampleTextarea" placeholder="نظراتتان را بنویسید" rows="3"></textarea>
+          </div>
+          
+          <div class="col-md-4 form-group samim" id="checkbox">
+            <select class="form-control" id="sel1">
+              <option disabled selected value>لورم ایپسوم</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <div class="col-md-6">
+              <label class="col-md-12"><input type="checkbox" class="checkbox-rotate"/>Rotate</label>
+              <label class="col-md-12"><input type="checkbox" class="checkbox-rotate"/>Rotate</label>
             </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" />
-                Check me out
-              </label>
+            <div class="col-md-6">
+              <label class="col-md-12"><input type="radio"/>Rotate</label>
+              <label class="col-md-12"><input type="radio"/>Rotate</label>
             </div>
           </div>
         </div>
-        <!-- /.checkOutPart -->
+        <!-- /.row -->
       </section>
       <!-- /#form -->
       
-      <div class="hrSpacer"></div>
+      <div class="spacer"></div>
       
       <section id="tabs">
         <div class="row">
@@ -254,16 +247,15 @@
           <div class="hr"></div>
           
           <ul class="list-unstyle list-inline text-center col-md-12">
-            <li><a href="#" data-target="1">عنوان تب ها</a></li>
-            <li><a href="#" data-target="2">عنوان تب ها</a></li>
-            <li><a href="#" data-target="3">عنوان تب ها</a></li>
+            <li><a href="#" data-toggle="collapse" data-target="#demo1">عنوان تب ها</a></li>
+            <li><a href="#" data-toggle="collapse" data-target="#demo2">عنوان تب ها</a></li>
+            <li><a href="#" data-toggle="collapse" data-target="#demo3">عنوان تب ها</a></li>
           </ul>
           
-          <div class="col-md-12">
-            <p id="1">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
-            <p id="2">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
-            <p id="3">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
-          </div>
+            <p class="collapse" id="demo1">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
+            <p class="collapse" id="demo2">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
+            <p class="collapse" id="demo3">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
+            
         </div>
       </section>
       <!-- /#tabs -->
