@@ -579,6 +579,18 @@ label.selector:before {
   pointer-events:none;
   display:block;
 }
+option:hover {
+  background-color:#010101;
+  padding: 10px;
+}
+
+option {
+  -webkit-border-radius:25px; -moz-border-radius:25px; border-radius:25px;
+  color:blue;
+  background-color:#e4e4e4;
+  transition-duration: .3s;
+  padding: 5px;
+}
 .item-content-bevel {
     background: #454c59;
     color: #fff;
