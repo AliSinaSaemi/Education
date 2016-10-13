@@ -222,25 +222,14 @@
             </div>
 
             <div class="col-md-4 form-group samim" id="checkbox">
-              <div class="control-group reset-margin-selector">
-                <select class="chzn-done" style="display: none;">
-                  <option disabled="" selected="" value="">Select option</option>
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                </select>
-                <div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 364px;" title=""><a class="chzn-single" tabindex="-1"><span>Select option</span><div><b></b></div></a>
-                  <div class="chzn-drop">
-                    <div class="chzn-search">
-                      <input type="text" autocomplete="off" readonly="">
-                    </div>
-                    <ul class="chzn-results">
-                      <li class="disabled-result result-selected" style="" data-option-array-index="0">Select option</li>
-                      <li class="active-result" style="" data-option-array-index="1">Option 1</li>
-                      <li class="active-result" style="" data-option-array-index="2">Option 2</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <select class="dropdown">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+              </select>
+            </div>
+            <div class="col-md-4 form-group samim" id="checkbox">
               <div class="col-md-6">
                 <span class="checkbox">
                   <input type="checkbox" id="checkbox_1" checked/>
@@ -312,10 +301,7 @@
                   </div>
                 </a>
                 <div id="collapse1" class="panel-collapse collapse in">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.</div>
+                  <div class="panel-body samim">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
                 </div>
               </li>
               <li class="panel panel-default">
@@ -324,11 +310,8 @@
                     <h5 class="panel-title heading-style-4">عناوین اصلی</h5>
                   </div>
                 </a>
-                <div id="collapse1" class="panel-collapse collapse in">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.</div>
+                <div id="collapse1" class="panel-collapse collapse">
+                  <div class="panel-body samim">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
                 </div>
               </li>
               <li class="panel panel-default">
@@ -337,63 +320,100 @@
                     <h5 class="panel-title heading-style-4">عناوین اصلی</h5>
                   </div>
                 </a>
-                <div id="collapse1" class="panel-collapse collapse in">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.</div>
+                <div id="collapse1" class="panel-collapse collapse">
+                  <div class="panel-body samim">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
                 </div>
               </li>
             </ul>
           </div>
 
           <div class="col-md-6">
-            <ul class="list-unstyle">
-              <li><a href="#" id="1">link</a></li>
-              <p id="1">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
-              <li><a href="#" id="2">link</a></li>
-              <p id="2">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
-              <li><a href="#" id="3">link</a></li>
-              <p id="3">If you want to explore multiple subjects in greater depth than you did in high school, then you're on the right way. We offer in-depth studying of your preferred courses, with the possibility to manage the schedule on your own.</p>
-            </ul>
+            <div class="fancy-collapse-panel">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a class="yekan" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">امیرعلی
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body samim">
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="yekan" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">رضا
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body samim">
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="yekan" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">سپهر
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body samim">
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </section>
         <!-- /#accordionsAndToggles -->
 
-        <div class="hrSpacer"></div>
-
         <section id="table">
-          <h1 class="text-center">جدول ها</h1>
-          <div class="hr"></div>
-
-          <div class="col-md-12">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-                </tr>
-                <tr>
-                  <td>Mary</td>
-                  <td>Moe</td>
-                  <td>mary@example.com</td>
-                </tr>
-                <tr>
-                  <td>July</td>
-                  <td>Dooley</td>
-                  <td>july@example.com</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="row">
+            <div class="col-md-12">
+              <!-- I put div.spacer and title in the one div in row class for one bog i dont know about
+              but it is not tarditional in edutions rules -->
+              <div class="spacer"></div>
+              <h1 class="text-center">جدول ها</h1>
+              <hr class="titleUnderLine">
+            </div>
+  
+            <div class="col-md-12">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
         <!-- /#table -->
