@@ -530,6 +530,9 @@ section#tabs ul li:first-child {
 section#tabs p {
   margin-top: 40px;
 }
+
+/* AT TOP WE NEED TO TEXT FOR SELECTBOX: ;
+========================================================================================*/
 .control-group {
   position: relative;
 }
@@ -765,13 +768,6 @@ section#tabs p {
 .input-append .chzn-container-single .chzn-drop {
   border-color: #e8e8e8;
 }
-.item-content-bevel {
-    background: #454c59;
-    color: #fff;
-    overflow: hidden;
-    padding: 61px 0 54px;
-    position: relative;
-}
 .chzn-container .chzn-drop {
   position: absolute;
   top: 100%;
@@ -993,6 +989,38 @@ ul.chzn-choices li:before {
   }
 }
 /* @end */
+
+/* AT TOP WE NEED TO TEXT FOR SELECTBOX: ;
+========================================================================================*/
+a.collapse-selector {
+  width: 100%;
+  transition: .3s;
+  text-decoration: none;
+}
+a.collapse-selector:hover {
+  text-decoration: none;
+  color: #fff;
+}
+div.panel-heading { padding: 0; }
+div.panel-heading h5 {
+  margin-bottom: 0;
+  padding: 20px 15px;
+  background-color: #f34a2e;
+  font-size: 25px;
+  transition: .3s;
+  color: white;
+}
+div.panel-heading h5:hover {
+  background-color: #262626;
+  color: #fff;
+}
+.item-content-bevel {
+    background: #454c59;
+    color: #fff;
+    overflow: hidden;
+    padding: 61px 0 54px;
+    position: relative;
+}
 .item-content-bevel:after,
 .item-content-bevel:before {
     content: "";
