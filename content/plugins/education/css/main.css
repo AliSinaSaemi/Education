@@ -7,7 +7,8 @@
 .display-none { display: none; }
 /* Fonts and texts
 ----------------------------------*/
-.yekan { font-family: 'yekan'; }
+.yekan { font-family: 'yekan'; }\
+.yekanBold { font-family: 'yekan'; font-weight: bold; }
 .homa { font-family: 'homa'; }
 .samim { font-family: 'samim'; }
 .samimBold { font-family: 'samim_bold' }
@@ -643,6 +644,57 @@ div.panel-heading h5 {
 .fancy-collapse-panel .panel-heading a.collapsed:after {
   content: "\f196";
 }
+.filterable {
+    margin-top: 15px;
+}
+.filterable .panel-heading .pull-right {
+    margin-top: -20px;
+}
+.filterable .filters input[disabled] {
+  border: none;
+  cursor: auto;
+  box-shadow: none;
+  padding: 0;
+  height: auto;
+  text-align: center
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder,
+.filterable .filters input[disabled]::-moz-placeholder,
+.filterable .filters input[disabled]:-ms-input-placeholder {
+  text-align: center
+}
+section#table div.panel-primary {
+  border: none;
+  border-radius: 0;
+}
+h1.price-title {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+div.price-bevel strong {
+  font-size: 40px;
+  margin-top: 10px;
+}
+div.price-bevel small {
+  position: relative;
+  bottom: 5px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: 'yekan';
+}
+ul.pricing-list-item {
+  margin: 0 auto;
+  padding: 0 10px 10px 10px; 
+  width: 122px;
+  font-size: 14px;
+  font-family: 'yekan';
+}
+ul.pricing-list-item li { margin-bottom: 8px; }
+div.btn-center-maker {
+  margin: 20px auto 0 auto;
+  padding: 0 5px 10px 5px; 
+  width: 136px;
+}
 .item-content-bevel {
     overflow: hidden;
     padding: 61px 0 54px;
@@ -683,10 +735,8 @@ div.panel-heading h5 {
     left: -7px;
     margin-top: -7px;
 }
-
+.first-list-pricing { margin-bottom: 50px; }
 .price-bevel {
-    background: #4ec4c8;
-    color: #fff;
     font-size: 14px;
     font-weight: bold;
     line-height: 50px;
@@ -728,6 +778,7 @@ div.panel-heading h5 {
     left: -7px;
     margin-top: -7px;
 }
+
 .item-content-curve {
     padding: 27px 0;
     -webkit-transition: all 0.2s linear;
@@ -776,9 +827,7 @@ div.panel-heading h5 {
     transition: all 0.2s linear;
 }
 .item-content-curve:hover .content-inner-curve .content-top { opacity: 0; }
-.item-content-curve:hover .content-inner-curve .content-top h1 {
-  margin-bottom: 0px;
-}
+.item-content-curve:hover .content-inner-curve .content-top h1 { margin-bottom: 0px; }
 .item-content-curve:hover .content-inner-curve .content-bottom { opacity: 1; }
 .indent {
     -webkit-box-sizing: border-box;
@@ -891,6 +940,10 @@ div.panel-heading h5:hover {
   background-color: #e2e0e0;
   color: #7d7d7d;
 }
+.filterable .filters input[disabled] {
+  background-color: transparent;
+  color: #fff;
+}
 .dropdown div{ background: #fff; }
 .dropdown .selected,
 .dropdown li {
@@ -904,6 +957,26 @@ div.panel-heading h5:hover {
 .dropdown { background: #e4e4e4; }
 .item-content-bevel {
     background: #454c59;
+    color: #fff;
+}
+.filterable .filters input[disabled] {
+  background-color: transparent;
+  color: #fff;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholderو
+.filterable .filters input[disabled]::-moz-placeholderو
+.filterable .filters input[disabled]:-ms-input-placeholder { color: #fff; }
+tr.filters {
+  background-color: #f34a2e;
+  color: #fff;
+}
+.price-special { background-color: #f34a2e; }
+tr.filters {
+  background-color: #f34a2e;
+  color: #fff;
+}
+.price-bevel {
+    background: #4ec4c8;
     color: #fff;
 }
 .item-content-curve:hover .content-inner-curve .content-top h1,
@@ -929,4 +1002,5 @@ div.panel-heading h5:hover {
 ===========================================================================*/
 @media (max-width: 768px) {
   section#provideEducation img { margin-bottom: 25px; }
+  section#table { display: none; }
 }
