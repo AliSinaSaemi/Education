@@ -156,6 +156,45 @@ div.spacer {
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;  
 }
+.dropdown-menu {
+  min-width: 250px;
+}
+.dropdown-menu.columns-3 {
+  min-width: 850px;
+  position: absolute;
+  right: -250px;
+  padding: 0 20px 20px 0;
+}
+.col-3-list { position: relative; }
+.col-3-list a {
+  color: #fff;
+  font-family: 'yekan';
+  transition: color .3s;
+}
+.col-3-list a.active { color: #f34a2e; }
+.col-3-list a:hover {
+  color: #f34a2e;
+  text-decoration: none;
+}
+.col-3-list li {
+  margin-top: 10px;
+}
+.dropdown-menu li a {
+  padding: 5px 15px;
+  font-weight: 300;
+}
+.multi-column-dropdown {
+  list-style: circle;;
+  color: #fff;
+  margin: 0px;
+  padding: 20px;
+}
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  white-space: normal;
+}
 section#listGroups div.listItems article .item-content {
   overflow: hidden;
   position: relative;
@@ -1127,4 +1166,10 @@ tr.filters {
 @media (max-width: 768px) {
   section#provideEducation img { margin-bottom: 25px; }
   section#table { display: none; }
+}
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
 }

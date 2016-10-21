@@ -1091,14 +1091,12 @@ th {
     text-align: left
   }
 }
-
 .form-horizontal .has-feedback .form-control-feedback {
   left: 15px;
   right: auto
 }
-
 .caret {
-  margin-right: 2px;
+  margin-right: 6px;
   margin-left: 0
 }
 
@@ -1394,7 +1392,7 @@ th {
     margin-right: auto
   }
   .navbar-right .dropdown-menu {
-    left: -50px;
+    left: -145px;
     transition: top .3s;
     right: auto
   }
