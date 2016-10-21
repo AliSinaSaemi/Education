@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="content/plugins/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="content/plugins/bootstrap/css/bootstrap-rtl.min.css" />
 
+  <!-- Required plugin - Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+
   <!-- Font awsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" />
 
@@ -26,34 +29,52 @@
 
   <!-- Customize Fonts -->
   <link rel="stylesheet" href="content/font/style.css" />
-
 </head>
 
 <body>
 
   <!-- // Naviagation // -->
   <header>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Education</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="col-md-3">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">دانشگاه مجازی</a>
+          </div>
         </div>
         <!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="active"><a href="elements.html">Elements</a></li>
-          </ul>
+        <div class="col-md-9">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">خانه</a></li>
+              <li><a href="#">درباره ما</a></li>
+              <li><a href="#">صفحات</a></li>
+              <li><a href="#">بلاگ</a></li>              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">منو<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                  <li class="active"><a href="#">لینک اول</a></li>
+                  <li><a href="#">لینکی دیگر</a></li>
+                  <li><a href="#">اینوری لینک</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">لینک جدا شده</a></li>
+                </ul>
+              </li>
+              <li class="disabled"><a href="#">تماس با ما</a></li>
+              <li class="active"><a href="elements.html">عناصر</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-lock"></i></a></li>
+            </ul>
+          </div>
         </div>
         <!-- /.collapse -->
       </div>
@@ -222,7 +243,7 @@
             </div>
 
             <div class="col-md-4 form-group samim" id="checkbox">
-              <select class="dropdown">
+              <select class="dropdowner">
                 <option value="1">Option 1</option>
                 <option value="2">Option 2</option>
                 <option value="3">Option 3</option>
@@ -391,10 +412,14 @@
                 <table class="table table-bordered">
                   <thead>
                     <tr class="filters">
-                      <th><h5 class="text-center heading-style-4">میام برات</h5></th>
-                      <th><h5 class="text-center heading-style-4">میام برات</h5></th>
-                      <th><h5 class="text-center heading-style-4">میام برات</h5></th>
-                      <th><h5 class="text-center heading-style-4">میام برات</h5></th>
+                      <th>
+                        <h5 class="text-center heading-style-4">میام برات</h5></th>
+                      <th>
+                        <h5 class="text-center heading-style-4">میام برات</h5></th>
+                      <th>
+                        <h5 class="text-center heading-style-4">میام برات</h5></th>
+                      <th>
+                        <h5 class="text-center heading-style-4">میام برات</h5></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -514,7 +539,7 @@
                 </div>
               </div>
             </article>
-            
+
           </div>
           <!-- /.row -->
 
@@ -542,9 +567,9 @@
                     </div>
                   </div>
                 </div>
-                  <div class="btn-center-maker">
-                    <a class="btn-form yekan" href="#" class="btn">ادامه مطلب</a>
-                  </div>
+                <div class="btn-center-maker">
+                  <a class="btn-form yekan" href="#" class="btn">ادامه مطلب</a>
+                </div>
               </div>
             </article>
 

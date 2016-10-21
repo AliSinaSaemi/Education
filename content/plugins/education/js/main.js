@@ -1,5 +1,5 @@
 /*
-* EASYDROPDOWN - A Drop-down Builder for Styleable Inputs and Menus
+* EASY - A Drop-downer Builder for Styleable Inputs and Menus
 * Version: 2.1.4
 * License: Creative Commons Attribution 3.0 Unported - CC BY 3.0
 * http://creativecommons.org/licenses/by/3.0/
@@ -18,7 +18,7 @@
 		this.hasLabel = false,
 		this.keyboardMode = false,
 		this.nativeTouch = true,
-		this.wrapperClass = 'dropdown',
+		this.wrapperClass = 'dropdowner',
 		this.onChange = null;
 	};
 	
@@ -34,7 +34,7 @@
 			self.options = [];
 			self.$options = self.$select.find('option');
 			self.isTouch = 'ontouchend' in document;
-			self.$select.removeClass(self.wrapperClass+' dropdown');
+			self.$select.removeClass(self.wrapperClass+' dropdowner');
 			if(self.$select.is(':disabled')){
 				self.disabled = true;
 			};
@@ -468,7 +468,7 @@
 			};
 		};
 		
-		$('select.dropdown').each(function(){
+		$('select.dropdowner').each(function(){
 			var json = $(this).attr('data-settings');
 				settings = json ? $.parseJSON(json) : {}; 
 			instantiate(this, settings);
@@ -520,4 +520,85 @@ $(document).ready(function(){
             $table.find('tbody').prepend($('<tr class="no-result text-center"><td colspan="'+ $table.find('.filters th').length +'">No result found</td></tr>'));
         }
     });
+});
+var dropdownSelectors = $('.dropdown, .dropup');
+
+// Custom function to read dropdown data
+// =========================
+function dropdownEffectData(target) {
+  // @todo - page level global?
+  var effectInDefault = null,
+      effectOutDefault = null;
+  var dropdown = $(target),
+      dropdownMenu = $('.dropdown-menu', target);
+  var parentUl = dropdown.parents('ul.nav'); 
+
+  // If parent is ul.nav allow global effect settings
+  if (parentUl.size() > 0) {
+    effectInDefault = parentUl.data('dropdown-in') || null;
+    effectOutDefault = parentUl.data('dropdown-out') || null;
+  }
+  
+  return {
+    target:       target,
+    dropdown:     dropdown,
+    dropdownMenu: dropdownMenu,
+    effectIn:     dropdownMenu.data('dropdown-in') || effectInDefault,
+    effectOut:    dropdownMenu.data('dropdown-out') || effectOutDefault,  
+  };
+}
+
+// Custom function to start effect (in or out)
+// =========================
+function dropdownEffectStart(data, effectToStart) {
+  if (effectToStart) {
+    data.dropdown.addClass('dropdown-animating');
+    data.dropdownMenu.addClass('animated');
+    data.dropdownMenu.addClass(effectToStart);    
+  }
+}
+
+// Custom function to read when animation is over
+// =========================
+function dropdownEffectEnd(data, callbackFunc) {
+  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+  data.dropdown.one(animationEnd, function() {
+    data.dropdown.removeClass('dropdown-animating');
+    data.dropdownMenu.removeClass('animated');
+    data.dropdownMenu.removeClass(data.effectIn);
+    data.dropdownMenu.removeClass(data.effectOut);
+    
+    // Custom callback option, used to remove open class in out effect
+    if(typeof callbackFunc == 'function'){
+      callbackFunc();
+    }
+  });
+}
+
+// Bootstrap API hooks
+// =========================
+dropdownSelectors.on({
+  "show.bs.dropdown": function () {
+    // On show, start in effect
+    var dropdown = dropdownEffectData(this);
+    dropdownEffectStart(dropdown, dropdown.effectIn);
+  },
+  "shown.bs.dropdown": function () {
+    // On shown, remove in effect once complete
+    var dropdown = dropdownEffectData(this);
+    if (dropdown.effectIn && dropdown.effectOut) {
+      dropdownEffectEnd(dropdown, function() {}); 
+    }
+  },  
+  "hide.bs.dropdown":  function(e) {
+    // On hide, start out effect
+    var dropdown = dropdownEffectData(this);
+    if (dropdown.effectOut) {
+      e.preventDefault();   
+      dropdownEffectStart(dropdown, dropdown.effectOut);   
+      dropdownEffectEnd(dropdown, function() {
+        dropdown.dropdown.removeClass('open');
+      }); 
+    }    
+  }, 
 });
