@@ -602,3 +602,6 @@ dropdownSelectors.on({
     }    
   }, 
 });
+
+$('nav').sticky();
+

@@ -8,7 +8,7 @@
 .display-none { display: none; }
 /* Fonts and texts
 ----------------------------------*/
-.yekan { font-family: 'yekan'; }\
+.yekan { font-family: 'yekan'; }
 .yekanBold { font-family: 'yekan'; font-weight: bold; }
 .homa { font-family: 'homa'; }
 .samim { font-family: 'samim'; }
@@ -133,7 +133,18 @@ div.spacer {
   height: 1px;
   margin: 50px 0;
 }
-.navbar { min-height: 65px; }
+header {
+  min-height: 95px;
+}
+.navbar { 
+  min-height: 65px; 
+  padding: 20px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+.is-sticky .navbar {
+  padding: 0;
+}
 .navbar ul,
 .navbar .navbar-brand{ margin-top: 5px; }
 .navbar a i { 
@@ -199,16 +210,16 @@ div.spacer {
   white-space: normal;
 }
 .content:before, .content:after {
-    content: '';
-    position: absolute;
-    border: 46px solid transparent;
+  content: '';
+  position: absolute;
+  border: 46px solid transparent;
 }
 .content:before {
   border-top: 0px solid transparent;
   border-left: 0px solid transparent;
   border-right: 856px solid #d8d8d8;
   right: 0px;
-  top: 65px;
+  top: 0px;
 }
 .content:after {
   border-bottom: 0px solid transparent;
@@ -264,10 +275,11 @@ section#listGroups div.listItems article div.item-content h6 a:hover,
 section#listGroups ol li a:hover,
 section#listGroups ul li a:hover { text-decoration: none; }
 blockquote {
-  margin-right: 100px
+  margin-right: 100px;
 }
 blockquote:before {
   display: block;
+  /* If something happen to this content element put this (“) back */
   content: '“';
   font: 170px/15px 'Open Sans', sans-serif;
   padding-top: 27px;
@@ -936,11 +948,21 @@ div.progress-horizantal .progress {
   position: relative;
   top: 10px;
 }
+#footer-wrapper {
+  background-color #2d2c2f;
+}
+.footer-wrapper-inner {
+  padding-top: 95px;
+  position: relative;
+}
+.footer-content {
+  padding: 40px;
+}
 /* Colors
 ===========================================================================*/
 /* Global
 -----------------------------------------*/
-body { background-color: #222; }
+body { background-color: #2d2c2f }
 .content { background-color: #efefef; }
 *::-moz-selection {
   background: #f34a2e;
