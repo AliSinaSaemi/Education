@@ -209,6 +209,47 @@ header {
   line-height: 1.428571429;
   white-space: normal;
 }
+.sub-menu-parent { position: relative; }
+.sub-menu {
+  padding: 20px;
+  background-color: #2d2c2f;
+  width: 300px;
+  visibility: hidden;
+  /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  -webkit-transform: translateY(-2em);
+  transform: translateY(-2em);
+  z-index: -1000;
+  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible;
+  /* shows sub-menu */
+  opacity: 1;
+  z-index: 2000;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition-delay: 0s, 0s,0s;
+  transition-delay: 0s, 0s, 0s;
+  /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+.account-mini-page input:nth-child(2) { margin-bottom: 20px; }
+.account-mini-page span.checkbox { 
+  margin-right: 10px; 
+  background-color: #1f1f21;
+}
+.account-mini-page input {
+  background-color: #1f1f21;
+  color: #fff;
+}
+.mini-form-title { 
+  padding-bottom: 10px; 
+  color: #fff;
+}
 .content:before, .content:after {
   content: '';
   position: absolute;
@@ -285,6 +326,7 @@ blockquote:before {
   padding-top: 27px;
 }
 blockquote h6#cite { font-size: 20px; }
+.account-mini-page input,
 section#form div.controlls .form-control {
   border: none;
   border-radius: 0;
@@ -702,6 +744,9 @@ div.panel-heading h5 {
 }
 .fancy-collapse-panel .panel-heading a.collapsed:after { content: "\f196"; }
 tr.filters h5 { margin: 0; }
+.fix-position {
+  margin-top: 50px;
+}
 section#table div.panel-primary {
   border: none;
   border-radius: 0;
