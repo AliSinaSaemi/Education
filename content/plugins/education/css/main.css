@@ -250,6 +250,9 @@ header {
   padding-bottom: 10px; 
   color: #fff;
 }
+.forget-pass .forget-links {
+  padding: 0;
+}
 .content:before, .content:after {
   content: '';
   position: absolute;
