@@ -250,8 +250,60 @@ header {
   padding-bottom: 10px; 
   color: #fff;
 }
-.forget-pass .forget-links {
-  padding: 0;
+.account-mini-page label {
+  color: #fff;
+}
+.account-mini-page .submit {
+  background-color: #fff;
+  color: #000;
+}
+.forget-links li {
+  margin-right: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.forget-links li a {
+  color: #919191;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.forget-links li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.account-mini-page .social-medias ul li {
+  margin-right: 0;
+}
+.account-mini-page .social-medias {
+  margin-bottom: 0;
+}
+.social-medias ul .bg-facebook,
+.social-medias ul .bg-googleplus {
+  position: relative;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  top: 13px;
+  text-align: center;
+}
+ul .bg-facebook a i,
+ul .bg-googleplus a i {
+  font-size: 22.5px;
+  position: relative;
+  bottom: 8px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+ul .bg-facebook a:hover i,
+ul .bg-googleplus a:hover i {
+  font-size: 27px;
+  color: #Fff;
+}
+.social-medias ul .bg-googleplus {
+  background-color: #ef472b;
+}
+.social-medias ul .bg-facebook {
+  background-color: #2b78ef;
 }
 .content:before, .content:after {
   content: '';
