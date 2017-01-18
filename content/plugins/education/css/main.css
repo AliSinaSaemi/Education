@@ -213,6 +213,39 @@ header {
   line-height: 1.428571429;
   white-space: normal;
 }
+.search-box {
+  width: 350px;
+  padding: 20px;
+  position: absolute;
+  left: -120px;
+  top: 70px;
+  background-color: #2d2c2f;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.search-box input {
+  background-color: #1f1f21;
+  color: #fff;
+  border-radius: 0;
+  padding: 22px;
+  margin-bottom: 20px;
+  border: none;
+}
+.search-box button{
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}
+.search-box button:hover {
+  background-color: #f34a2e;
+  color: #fff;
+}
+.search-show {
+  opacity: 1;
+  position: absolute;
+  left: 0px;
+}
 .sub-menu-parent { position: relative; }
 .sub-menu {
   padding: 20px;

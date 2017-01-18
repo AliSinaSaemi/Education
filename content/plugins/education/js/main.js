@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $("#searchButton").click(function(){
+        $("#searchBox").toggleClass("search-show");
+    });
+});
 (function($){
 	
 	function EasyDropDown(){
