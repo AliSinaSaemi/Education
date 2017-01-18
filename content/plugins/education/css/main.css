@@ -139,17 +139,21 @@ header {
 .navbar { 
   min-height: 65px; 
   padding: 20px;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 .is-sticky .navbar {
   padding: 0;
 }
 .navbar ul,
-.navbar .navbar-brand{ margin-top: 5px; }
+.navbar .navbar-brand{ margin-bottom: 0; }
 .navbar a i { 
   -webkit-transition-duration: .3s; 
   transition-duration: .3s; 
+}
+.navbar-menu {
+  position: relative;
+  top: 5px;
 }
 .navbar-brand { font-size: 30px; }
 .navbar-left li { margin-right: 25px; }
@@ -285,6 +289,16 @@ header {
   height: 48px;
   top: 13px;
   text-align: center;
+}
+ul .bg-facebook a i,
+ul .bg-googleplus a i {
+  padding: 20px;
+}
+ul .bg-facebook i {
+  left: 8px;
+}
+ul .bg-googleplus i {
+  left: 16.5px;
 }
 ul .bg-facebook a i,
 ul .bg-googleplus a i {
