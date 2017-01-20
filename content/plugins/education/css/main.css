@@ -138,12 +138,12 @@ header {
 }
 .navbar { 
   min-height: 65px; 
-  padding: 20px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  padding: 20px 0 20px 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 .is-sticky .navbar {
-  padding: 0;
+  padding: 5px;
 }
 .navbar ul,
 .navbar .navbar-brand{ margin-bottom: 0; }
@@ -1406,5 +1406,37 @@ tr.filters {
   .dropdown-menu.multi-column {
     min-width: 240px !important;
     overflow-x: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 996px) {
+  .dropdown-menu.columns-3 {
+    min-width: 800px;
+    right: -95px;
+  }
+  .multi-column-dropdown {
+    padding: 0;
+  }
+  .dropdown-menu li a {
+    padding: 5px 0;
+    font-weight: 300;
+  }
+  .multi-column-dropdown li a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 996px) and (max-width: 1200px) {
+  .dropdown-menu.columns-3 {
+    min-width: 810px;
+    right: -45px;
+  }
+  .multi-column-dropdown {
+    padding: 0;
+  }
+  .dropdown-menu li a {
+    padding: 5px 0;
+    font-weight: 300;
+  }
+  .multi-column-dropdown li a {
+    font-size: 14px;
   }
 }
