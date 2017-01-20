@@ -936,7 +936,7 @@ div.btn-center-maker {
 .item-content-bevel:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 1000px;
   padding: 0 100px;
   height: 230px;
   background: #efefef;
@@ -956,11 +956,12 @@ div.btn-center-maker {
 .item-content-bevel:before {
   bottom: 100%;
   margin-bottom: -7px;
+  top: -218px;
   right: -10px;
 }
 .item-content-bevel:after {
-  top: 100%;
-  left: -7px;
+  top: 580px;
+  left: -125px;
   margin-top: -7px;
 }
 .first-list-pricing { margin-bottom: 50px; }
@@ -968,7 +969,7 @@ div.btn-center-maker {
 .price-special {
   font-size: 14px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 75px;
   margin-bottom: 29px;
   overflow: hidden;
   padding: 28px 0 35px;
@@ -981,7 +982,7 @@ div.btn-center-maker {
 .price-bevel:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 1000px;
   padding: 0 100px;
   height: 230px;
   transform-origin: 50% 50%;
