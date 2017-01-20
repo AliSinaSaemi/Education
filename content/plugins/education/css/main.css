@@ -214,7 +214,7 @@ header {
   white-space: normal;
 }
 .search-box {
-  width: 350px;
+  width: 300px;
   padding: 20px;
   position: absolute;
   left: -120px;
@@ -223,6 +223,10 @@ header {
   opacity: 0;
   -webkit-transition: .5s;
   transition: .5s;
+}
+.search-box h4 {
+  color: #fff;
+  margin-top: 0;
 }
 .search-box input {
   background-color: #1f1f21;
@@ -233,18 +237,18 @@ header {
   border: none;
 }
 .search-box button{
-  background-color: #fff;
-  color: #000;
+  background-color: #f34a2e;;
+  color: #fff;
   width: 100%;
 }
 .search-box button:hover {
-  background-color: #f34a2e;
+  background-color: #1f1f21;
   color: #fff;
 }
 .search-show {
   opacity: 1;
   position: absolute;
-  left: 0px;
+  left: -79px;
 }
 .sub-menu-parent { position: relative; }
 .sub-menu {
