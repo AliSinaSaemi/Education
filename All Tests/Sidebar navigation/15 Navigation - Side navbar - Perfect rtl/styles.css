@@ -26,7 +26,7 @@ body,
   position: relative;
 }
 #cssmenu {
-  width: 250px;
+  width: 0;
   position: fixed;
   border-bottom: 4px solid #656659;
   background-color: #2d2c2f;

@@ -4,11 +4,33 @@ $(document).ready(function(){
     });
 });
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("cssmenu").style.width = "250px";
 }
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("cssmenu").style.width = "0";
 }
+(function ($) {
+  $(document).ready(function () {
+    $('#cssmenu > ul > li > a').click(function () {
+      $('#cssmenu li').removeClass('opened');
+      $(this).closest('li').addClass('opened');
+      var checkElement = $(this).next();
+      if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+        $(this).closest('li').removeClass('opened');
+        checkElement.slideUp('normal');
+      }
+      if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+        $('#cssmenu ul ul:visible').slideUp('normal');
+        checkElement.slideDown('normal');
+      }
+      if ($(this).closest('li').find('ul').children().length == 0) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  });
+})(jQuery);
 (function($){
 	
 	function EasyDropDown(){
