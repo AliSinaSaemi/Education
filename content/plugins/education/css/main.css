@@ -2106,6 +2106,21 @@ col-xs-7 {
   .sub-menu {
     width: 250px;
   }
+  .search-box {
+    width: 250px;
+    padding: 20px;
+    background-color: #2d2c2f;
+    opacity: 1;
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 2000;
+  }
+  #cssmenu .search-box h4 {
+    display: none;
+  }
 }
 @media (min-width: 479px) {
   .item_img {
