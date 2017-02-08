@@ -1,5 +1,21 @@
 /* Global
 ===========================================================================*/
+@charset:utf-8;
+
+body::-webkit-scrollbar,
+#cssmenu::-webkit-scrollbar { 
+  width: .5em; 
+  text-align: right;
+}
+body::-webkit-scrollbar-track,
+#cssmenu::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+body::-webkit-scrollbar-track-piece,
+#cssmenu::-webkit-scrollbar-track-piece { background-color: #181719; }
+body::-webkit-scrollbar-thumb,
+#cssmenu::-webkit-scrollbar-thumb{
+  background-color: #f34a2e;
+  outline: 1px solid #a7ace1;
+}
 
 .content {
   padding-bottom: 44px;
@@ -33,7 +49,7 @@
 }
 
 .samimBold {
-  font-family: 'samim_bold'
+  font-family: 'samim_bold';
 }
 
 .text-jutify {
@@ -2107,7 +2123,7 @@ col-xs-7 {
     width: 250px;
   }
   .search-box {
-    width: 250px;
+    width: 100%;
     padding: 20px;
     background-color: #2d2c2f;
     opacity: 1;
@@ -2120,6 +2136,37 @@ col-xs-7 {
   }
   #cssmenu .search-box h4 {
     display: none;
+  }
+  .sub-menu {
+    padding: 20px;
+    background-color: #2d2c2f;
+    width: 100%;
+    visibility: visible;
+    /* hides sub-menu */
+    opacity: 1;
+    position: relative;
+    top: 22px;
+    left: 0;
+    -webkit-transform: translateY(-2em);
+    transform: translateY(-2em);
+    z-index: -1000;
+    -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
+  .account-mini-page .social-medias { margin-bottom: 36px; }
+  .account-mini-page .social-medias .btn-form { padding: 7.5px 18px; }
+  .account-mini-page .social-medias .or p { padding: 1px; }
+  ul .bg-facebook a i {
+    font-size: 24.5px;
+    position: relative;
+    /* bottom: 8px; */
+    right: -6px;
+  }
+  ul .bg-googleplus a i {
+    font-size: 22.5px;
+    position: relative;
+    bottom: 8px;
+    right: -10px;
   }
 }
 @media (min-width: 479px) {
