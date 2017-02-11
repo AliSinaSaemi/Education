@@ -208,7 +208,6 @@ header {
   width: 0;
   position: fixed;
   border-bottom: 4px solid #656659;
-  background-color: #2d2c2f;
   right: 0;
   top: 0;
   margin-left: auto;
@@ -221,7 +220,6 @@ header {
 hr.distincter {
   height: 2.5px;
   width: 50px;
-  background-color: #181819;
   border: none;
   border-radius: 5px;
 }
@@ -233,17 +231,12 @@ hr.distincter {
   left: 10px;
   top: 15px;
   border: none;
-  background-color: #1a1a1b;
-  color: #fff;
   font-size: 17px;
   cursor: pointer;
   padding-bottom: 5px;
 }
 #cssmenu a {
   line-height: 1.3;
-}
-#cssmenu > ul > li:first-child {
-  background: #2d2c2f;
 }
 #cssmenu > ul > li:first-child > a {
   padding: 15px 10px;
@@ -259,17 +252,12 @@ hr.distincter {
 #cssmenu > ul > li:first-child > a > span {
   padding: 0;
 }
-#cssmenu > ul > li:first-child:hover {
-  background: #2d2c2f;
-}
 #cssmenu > ul > li {
-  background: #e94f31;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
   background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
   background: linear-gradient(#e94f31 0%, #d13516 100%);
 }
 #cssmenu > ul > li:hover {
-  background: #e84323;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e84323), color-stop(100%, #c33115));
   background: -webkit-linear-gradient(#e84323 0%, #c33115 100%);
   background: linear-gradient(#e84323 0%, #c33115 100%);
@@ -277,7 +265,6 @@ hr.distincter {
 #cssmenu > ul > li > a {
   font-size: 14px;
   display: block;
-  color: #ffffff;
   border: 1px solid #ba2f14;
   border-top: none;
   text-shadow: 0 -1px 1px #751d0c;
@@ -305,13 +292,11 @@ hr.distincter {
 /* Sub menu */
 #cssmenu ul ul {
   display: none;
-  background: #2d2c2f;
   border-right: 1px solid #a2a194;
 }
 #cssmenu ul ul li {
   padding: 0;
   border-top: none;
-  background: #2d2c2f;
   /* 
   If boss don't like it we back to old 
   
@@ -327,7 +312,6 @@ hr.distincter {
 #cssmenu ul ul a {
   padding: 10px 10px 10px 25px;
   display: block;
-  color: #fff;
   font-size: 12px;
   font-weight: normal;
   -webkit-transition: .5s;
@@ -338,10 +322,8 @@ hr.distincter {
   position: absolute;
   right: 10px;
   bottom: 11px;
-  color: #e94f31;
 }
 #cssmenu ul ul a:hover {
-  color: #e94f31;
 }
 
 .navbar {
@@ -383,7 +365,6 @@ hr.distincter {
 }
 
 .low-device-nav h1 a {
-  color: #fff;
   padding-right: 15px;
 }
 
@@ -396,7 +377,6 @@ hr.xxs-underline {
   height: 2px;
   margin-right: auto;
   margin-left: auto;
-  border-color: #fff;
 }
 
 .dropdown > a {
@@ -434,18 +414,12 @@ hr.xxs-underline {
 }
 
 .col-3-list a {
-  color: #fff;
   font-family: 'yekan';
   -webkit-transition: color .3s;
   transition: color .3s;
 }
 
-.col-3-list a.active {
-  color: #f34a2e;
-}
-
 .col-3-list a:hover {
-  color: #f34a2e;
   text-decoration: none;
 }
 
@@ -460,7 +434,6 @@ hr.xxs-underline {
 
 .multi-column-dropdown {
   list-style: none;
-  color: #fff;
   margin: 0px;
   padding: 20px;
 }
@@ -478,20 +451,16 @@ hr.xxs-underline {
   position: absolute;
   left: -120px;
   top: 70px;
-  background-color: #2d2c2f;
   opacity: 0;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .search-box h4 {
-  color: #fff;
   margin-top: 0;
 }
 
 .search-box input {
-  background-color: #1f1f21;
-  color: #fff;
   border-radius: 0;
   padding: 22px;
   margin-bottom: 20px;
@@ -499,15 +468,7 @@ hr.xxs-underline {
 }
 
 .search-box button {
-  background-color: #f34a2e;
-  ;
-  color: #fff;
   width: 100%;
-}
-
-.search-box button:hover {
-  background-color: #1f1f21;
-  color: #fff;
 }
 
 .search-show {
@@ -522,7 +483,6 @@ hr.xxs-underline {
 
 .sub-menu {
   padding: 20px;
-  background-color: #2d2c2f;
   width: 300px;
   visibility: hidden;
   /* hides sub-menu */
@@ -555,26 +515,11 @@ hr.xxs-underline {
 
 .account-mini-page span.checkbox {
   margin-right: 10px;
-  background-color: #1f1f21;
 }
 
-.account-mini-page input {
-  background-color: #1f1f21;
-  color: #fff;
-}
 
 .mini-form-title {
   padding-bottom: 10px;
-  color: #fff;
-}
-
-.account-mini-page label {
-  color: #fff;
-}
-
-.account-mini-page .submit {
-  background-color: #fff;
-  color: #000;
 }
 
 .forget-links li {
@@ -584,13 +529,11 @@ hr.xxs-underline {
 }
 
 .forget-links li a {
-  color: #919191;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .forget-links li a:hover {
-  color: #fff;
   text-decoration: underline;
 }
 
@@ -605,7 +548,6 @@ hr.xxs-underline {
 .social-medias ul .bg-facebook,
 .social-medias ul .bg-googleplus {
   position: relative;
-  color: #fff;
   width: 48px;
   height: 48px;
   top: 13px;
@@ -637,15 +579,6 @@ ul .bg-googleplus a i {
 ul .bg-facebook a:hover i,
 ul .bg-googleplus a:hover i {
   font-size: 27px;
-  color: #Fff;
-}
-
-.social-medias ul .bg-googleplus {
-  background-color: #ef472b;
-}
-
-.social-medias ul .bg-facebook {
-  background-color: #2b78ef;
 }
 
 .content:before,
@@ -876,7 +809,6 @@ span.checkbox label.checkbox-inner:before {
   position: absolute;
   right: 0;
   top: 0;
-  color: #f34a2e;
 }
 
 span.checkbox + label {
@@ -1130,10 +1062,6 @@ span.radio + label {
   border-bottom: 8px solid #000;
 }
 
-.dropdowner.disabled .carat {
-  border-top-color: #999;
-}
-
 .dropdowner .old {
   position: absolute;
   left: 0;
@@ -1322,7 +1250,6 @@ tr.filters h5 {
   margin-right: 27px;
   margin-top: 0;
   padding: 0;
-  color: #fff;
 }
 .wrap {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -1339,7 +1266,6 @@ a:active {
 .panel {
   border-width: 0 0 1px 0;
   border-style: solid;
-  border-color: #fff;
   background: none;
   box-shadow: none;
 }
@@ -1363,21 +1289,15 @@ a:active {
 .panel-heading {
   border-radius: 0;
   border: none;
-  color: #fff;
   padding: 0;
-  background-color: #f33d2e;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.panel-heading:hover {
-  background-color: #2d2c2f;
-}
 
 
 .panel-title a {
   display: block;
-  color: #fff;
   padding: 15px;
   position: relative;
   font-size: 22px;
@@ -1474,11 +1394,8 @@ a:active {
   transition: all 0.5s;
 }
 
-/* This is for testing accordion for while */
-
 div.panel_2 {
   padding: 10px;
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: 0.6s ease-in-out;
@@ -1494,7 +1411,6 @@ div.panel_2.show {
 .panel_2 p {
   font-size: 15px;
   line-height: 35px;
-  color: #2d2c2f
 }
 
 h1.price-title {
@@ -1727,7 +1643,6 @@ div.btn-center-maker {
   height: 20px;
   margin-bottom: 20px;
   overflow: hidden;
-  background-color: #f5f5f5;
   border-radius: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -1741,7 +1656,6 @@ div.btn-center-maker {
 
 .progress {
   height: 12px;
-  background-color: #fff;
   background-image: none;
   box-shadow: none;
 }
@@ -1752,9 +1666,7 @@ div.btn-center-maker {
   height: 100%;
   font-size: 12px;
   line-height: 20px;
-  color: #fff;
   text-align: center;
-  background-color: #428bca;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width .6s ease;
   transition: width .6s ease;
@@ -1770,7 +1682,6 @@ div.btn-center-maker {
 .progress-bar {
   box-shadow: none;
   border-radius: 0;
-  background-color: #0090D9;
   background-image: none;
   -webkit-transition: all 1000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
   transition: all 1000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
@@ -1786,7 +1697,6 @@ div.btn-center-maker {
 }
 
 .progress-bar-danger {
-  background-color: #f34a2e;
   background-image: none;
 }
 
@@ -1805,7 +1715,6 @@ div.btn-center-maker {
 div.progress-horizantal p {
   float: right;
   margin-left: 15px;
-  color: #f34a2e;
 }
 
 div.progress-horizantal .progress {
@@ -1851,13 +1760,8 @@ div.progress-horizantal .progress {
 }
 
 .social-medias ul li a {
-  color: #fff;
   -webkit-transition: .5s;
   transition: .5s;
-}
-
-.social-medias ul li a:hover {
-  color: #f34a2e;
 }
 
 .copyright-text {
@@ -1942,6 +1846,11 @@ div.spacer {
   color: #f34a2e;
 }
 
+.closebtn {
+  background-color: #1a1a1b;
+  color: #fff;
+}
+
 #listGroups div.listItems article i {
   color: #2d2c2f;
 }
@@ -1986,7 +1895,12 @@ input[type="radio"][readonly],
 input[type="checkbox"][readonly] {
   background-color: transparent;
 }
-
+div.panel_2 {
+  background-color: #fff;
+}
+.panel_2 p {
+  color: #2d2c2f;
+}
 .control-group.warning .checkbox,
 .control-group.warning .radio,
 .control-group.warning input,
@@ -2067,6 +1981,10 @@ tr.filters {
   color: #fff;
 }
 
+span.checkbox label.checkbox-inner:before {
+  color: #f34a2e;
+}
+
 .dropdowner div {
   background: #fff;
 }
@@ -2084,6 +2002,21 @@ tr.filters {
 
 .dropdowner {
   background: #e4e4e4;
+}
+
+.panel-title p {
+  color: #fff;
+}
+.panel-heading {
+  color: #fff;
+  background-color: #f33d2e;
+}
+
+.panel-heading:hover {
+  background-color: #2d2c2f;
+}
+.panel-title a {
+  color: #fff;
 }
 
 .item-content-bevel {
@@ -2145,6 +2078,217 @@ tr.filters {
 .circle-progress article {
   padding: 20px;
 }
+
+/* Test for importing color element in this secton CALL CODE :0933 */
+hr.distincter {
+  background-color: #181819;
+}
+.closebtn {
+  background-color: #1a1a1b;
+}
+#cssmenu > ul > li:first-child {
+  background: #2d2c2f;
+}
+#cssmenu > ul > li:first-child:hover {
+  background: #2d2c2f;
+}
+#cssmenu ul ul a {
+  color: #fff;
+}
+#cssmenu ul ul a:before {
+  color: #e94f31;
+}
+#cssmenu ul ul a:hover {
+  color: #e94f31;
+}
+.low-device-nav h1 a {
+  color: #fff;
+}
+hr.xxs-underline {
+  border-color: #fff;
+}
+.col-3-list a {
+  color: #fff;
+}
+.col-3-list a.active {
+  color: #f34a2e;
+}
+.col-3-list a:hover {
+  color: #f34a2e;
+}
+.multi-column-dropdown {
+  color: #fff;
+}
+.search-box h4 {
+  color: #fff;
+}
+.search-box input {
+  background-color: #1f1f21;
+  color: #fff;
+}
+.social-medias ul .bg-googleplus {
+  background-color: #ef472b;
+}
+
+.social-medias ul .bg-facebook {
+  background-color: #2b78ef;
+}
+.dropdowner.disabled .carat {
+  border-top-color: #999;
+}
+.panel {
+  border-color: #fff;
+}
+
+#cssmenu {
+  background-color: #2d2c2f;
+}
+hr.distincter {
+  background-color: #181819;
+}
+.closebtn {
+  background-color: #1a1a1b;
+}
+#cssmenu > ul > li:first-child:hover {
+  background: #2d2c2f;
+}
+#cssmenu > ul > li {
+  background: #e94f31;
+}
+#cssmenu > ul > li:hover {
+  background: #e84323;
+}
+#cssmenu > ul > li > a {
+  color: #ffffff;
+}
+#cssmenu ul ul {
+  background: #2d2c2f;
+}
+#cssmenu ul ul li {
+  background: #2d2c2f;
+}
+#cssmenu ul ul a {
+  color: #fff;
+}
+#cssmenu ul ul a:before {
+  color: #e94f31;
+}
+#cssmenu ul ul a:hover {
+  color: #e94f31;
+}
+.low-device-nav h1 a {
+  color: #fff;
+}
+.col-3-list a {
+  color: #fff;
+}
+.col-3-list a.active {
+  color: #f34a2e;
+}
+.multi-column-dropdown {
+  color: #fff;
+}
+.search-box {
+  background-color: #2d2c2f;
+}
+.search-box h4 {
+  color: #fff;
+}
+.search-box input {
+  background-color: #1f1f21;
+  color: #fff;
+}
+.search-box button {
+  background-color: #f34a2e;;
+  color: #fff;
+}
+.search-box button:hover {
+  background-color: #1f1f21;
+  color: #fff;
+}
+.account-mini-page span.checkbox {
+  margin-right: 10px;
+  background-color: #1f1f21;
+}
+
+.account-mini-page input {
+  background-color: #1f1f21;
+  color: #fff;
+}
+
+.mini-form-title {
+  color: #fff;
+}
+
+.account-mini-page label {
+  color: #fff;
+}
+
+.account-mini-page .submit {
+  background-color: #fff;
+  color: #000;
+}
+
+.forget-links li a {
+  color: #919191;
+}
+
+.forget-links li a:hover {
+  color: #fff;
+}
+
+.social-medias ul .bg-facebook,
+.social-medias ul .bg-googleplus {
+  color: #fff;
+}
+
+ul .bg-facebook a:hover i,
+ul .bg-googleplus a:hover i {
+  color: #Fff;
+}
+
+.progress {
+  background-color: #f5f5f5;
+}
+
+.progress {
+  background-color: #fff;
+}
+
+.progress-bar {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+.progress-bar {
+  background-color: #0090D9;
+}
+
+.progress-bar-danger {
+  background-color: #f34a2e;
+}
+
+div.progress-horizantal p {
+  color: #f34a2e;
+}
+
+#footer-wrapper {
+  background-color: #2d2c2f;
+}
+
+
+.social-medias ul li a {
+  color: #fff;
+}
+
+.social-medias ul li a:hover {
+  color: #f34a2e;
+}
+
+
+
+/* Test for importing color element in this secton CALL CODE :0933 */
 
 .bar {
   width: 250px;
