@@ -1313,36 +1313,168 @@ tr.filters h5 {
   border-radius: 0;
 }
 
-button.accordion_2 {
-  background-color: #f34a2e;
-  color: #fff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
+/* This is for testing accordion for while */
+
+.panel-title {
   text-align: right;
-  outline: none;
-  font-size: 15px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+}
+.panel-title p {
+  margin-right: 27px;
+  margin-top: 0;
+  padding: 0;
+  color: #fff;
+}
+.wrap {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
-button.accordion_2.active,
-button.accordion_2:hover {
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+.panel {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #fff;
+  background: none;
+  box-shadow: none;
+}
+
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-heading {
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+  background-color: #f33d2e;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.panel-heading:hover {
   background-color: #2d2c2f;
 }
 
-button.accordion_2:after {
-  content: '\002B';
+
+.panel-title a {
+  display: block;
   color: #fff;
-  font-weight: bold;
-  float: left;
-  margin-left: 5px;
+  padding: 15px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 400;
 }
 
-button.accordion_2.active:after {
-  content: "\2212";
+.panel-body {
+  background: #fff;
 }
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  -webkit-transition: border-radius 0.3s linear 0.2s;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  -webkit-transition: border-radius linear 0s;
+  transition: border-radius linear 0s;
+}
+
+
+/* #bs-collapse icon scale option */
+
+.panel-heading-2 a:before {
+  font-family: 'FontAwesome';
+  content: '\f062';
+  position: absolute;
+  font-family: 'FontAwesome';
+  right: 10px;
+  top: 18px;
+  font-size: 24px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.panel-heading-2.active a:before {
+  content: ' ';
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#bs-collapse .panel-heading-2 a:after {
+  content: ' ';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'FontAwesome';
+  right: 10px;
+  top: 18px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading-2.active a:after {
+  font-family: 'FontAwesome';
+  content: '\f063';
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+/* #accordion rotate icon option */
+
+#accordion .panel-heading-2 a:before {
+  content: '\f062';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'FontAwesome';
+  right: 5px;
+  top: 10px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#accordion .panel-heading-2.active a:before {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* This is for testing accordion for while */
 
 div.panel_2 {
   padding: 10px;
