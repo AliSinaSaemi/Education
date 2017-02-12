@@ -581,6 +581,52 @@ ul .bg-googleplus a:hover i {
   font-size: 27px;
 }
 
+/* line 3, ../../sass/jquery.scrolltop.scss */
+.fa-chevron-up:before {
+  position: relative;
+  bottom: 21px;
+  font-size: 16px;
+}
+
+.scrolltop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-family: 'Sans-serif';
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(45, 44, 47);
+  color: #b3b3b3;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 21, ../../sass/jquery.scrolltop.scss */
+.scrolltop:visited {
+  color: #b3b3b3;
+}
+/* line 24, ../../sass/jquery.scrolltop.scss */
+.scrolltop:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f34e2a;
+}
+/* line 28, ../../sass/jquery.scrolltop.scss */
+.scrolltop:focus {
+  text-decoration: none;
+}
+/* line 31, ../../sass/jquery.scrolltop.scss */
+.scrolltop.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .content:before,
 .content:after {
   content: '';
@@ -1848,6 +1894,15 @@ div.spacer {
 
 .closebtn {
   background-color: #1a1a1b;
+  color: #fff;
+}
+
+.sub-menu {
+  background-color: #2d2c2f;
+}
+
+.sub-menu .btn-form:hover {
+  background-color: #f34a2e;
   color: #fff;
 }
 
