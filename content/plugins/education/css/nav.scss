@@ -1,0 +1,443 @@
+
+header nav.navbar {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+header {
+  min-height: 95px;
+}
+#cssmenu {
+  height: 100%;
+}
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+#cssmenu {
+  width: 0;
+  position: fixed;
+  border-bottom: 4px solid #656659;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  border-bottom: none;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 3000;
+}
+hr.distincter {
+  height: 2.5px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+}
+.text-right {
+  text-align: right;
+}
+.closebtn {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+#cssmenu a {
+  line-height: 1.3;
+}
+#cssmenu > ul > li:first-child > a {
+  padding: 15px 10px;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-shadow: 0 -1px 1px #000000;
+  width: 187px;
+  margin-left: auto;
+}
+#cssmenu > ul > li:first-child > a > span {
+  padding: 0;
+}
+#cssmenu > ul > li {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
+  background: -webkit-linear-gradient(#e94f31 0%, #d13516 100%);
+  background: linear-gradient(#e94f31 0%, #d13516 100%);
+}
+#cssmenu > ul > li:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e84323), color-stop(100%, #c33115));
+  background: -webkit-linear-gradient(#e84323 0%, #c33115 100%);
+  background: linear-gradient(#e84323 0%, #c33115 100%);
+}
+#cssmenu > ul > li > a {
+  font-size: 14px;
+  display: block;
+  border: 1px solid #ba2f14;
+  border-top: none;
+  text-shadow: 0 -1px 1px #751d0c;
+}
+#cssmenu > ul > li > a > span {
+  display: block;
+  padding: 12px 10px;
+  border-radius: 4px;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu > ul > li.opened {
+  border-bottom: none;
+}
+#cssmenu > ul > li.has-sub > a span {
+  background: url(../../../images/icon_plus.png) 5% center no-repeat;
+}
+#cssmenu > ul > li.has-sub.opened > a span {
+  background: url(../../../images/icon_minus.png) 5% center no-repeat;
+}
+#cssmenu .has-sub ul li span {
+  margin-right: 15px;
+}
+/* Sub menu */
+#cssmenu ul ul {
+  display: none;
+  border-right: 1px solid #a2a194;
+}
+#cssmenu ul ul li {
+  padding: 0;
+  border-top: none;
+  /* 
+  If boss don't like it we back to old 
+  
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
+  background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
+  background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+  */
+}
+#cssmenu ul ul li:last-child {
+  border-bottom: none;
+}
+#cssmenu ul ul a {
+  padding: 10px 10px 10px 25px;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+#cssmenu ul ul a:before {
+  content: "»";
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+}
+#cssmenu ul ul a:hover {
+}
+
+.navbar {
+  min-height: 65px;
+  padding: 20px 0 20px 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.is-sticky .navbar {
+  padding: 5px;
+}
+
+.navbar ul,
+.navbar .navbar-brand {
+  margin-bottom: 0;
+}
+
+.navbar a i {
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.navbar-menu {
+  position: relative;
+  top: 5px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-left li {
+  margin-right: 25px;
+}
+
+.low-device-nav h1 {
+  font-size: 25px;
+}
+
+.low-device-nav h1 a {
+  padding-right: 15px;
+}
+
+.low-device-nav h1 a:hover {
+  text-decoration: none;
+}
+
+hr.xxs-underline {
+  width: 150px;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dropdown > a {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.dropdown-menu.animated {
+  -webkit-animation-duration: 0.55s;
+  animation-duration: 0.55s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.dropdown-menu.animated.fadeIn {
+  -webkit-animation-duration: 0.45s;
+  animation-duration: 0.45s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+.dropdown-menu {
+  min-width: 250px;
+}
+
+.dropdown-menu.columns-3 {
+  min-width: 850px;
+  position: absolute;
+  right: -250px;
+  padding: 0 20px 20px 0;
+}
+
+.col-3-list {
+  position: relative;
+}
+
+.col-3-list a {
+  font-family: 'yekan';
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.col-3-list a:hover {
+  text-decoration: none;
+}
+
+.col-3-list li {
+  margin-top: 10px;
+}
+
+.dropdown-menu li a {
+  padding: 5px 15px;
+  font-weight: 300;
+}
+
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 20px;
+}
+
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  white-space: normal;
+}
+
+.search-box {
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  left: -120px;
+  top: 70px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.search-box h4 {
+  margin-top: 0;
+}
+
+.search-box input {
+  border-radius: 0;
+  padding: 22px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.search-box button {
+  width: 100%;
+}
+
+.search-show {
+  opacity: 1;
+  position: absolute;
+  left: -79px;
+}
+
+.sub-menu-parent {
+  position: relative;
+}
+
+.sub-menu {
+  padding: 20px;
+  width: 300px;
+  visibility: hidden;
+  /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  -webkit-transform: translateY(-2em);
+  transform: translateY(-2em);
+  z-index: -1000;
+  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible;
+  /* shows sub-menu */
+  opacity: 1;
+  z-index: 2000;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition-delay: 0s, 0s, 0s;
+  transition-delay: 0s, 0s, 0s;
+  /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.account-mini-page input:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.account-mini-page span.checkbox {
+  margin-right: 10px;
+}
+
+
+.mini-form-title {
+  padding-bottom: 10px;
+}
+
+.forget-links li {
+  margin-right: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.forget-links li a {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.forget-links li a:hover {
+  text-decoration: underline;
+}
+
+.account-mini-page .social-medias ul li {
+  margin-right: 0;
+}
+
+.account-mini-page .social-medias {
+  margin-bottom: 0;
+}
+
+.social-medias ul .bg-facebook,
+.social-medias ul .bg-googleplus {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  top: 13px;
+  text-align: center;
+}
+
+ul .bg-facebook a i,
+ul .bg-googleplus a i {
+  padding: 20px;
+}
+
+ul .bg-facebook i {
+  left: 8px;
+}
+
+ul .bg-googleplus i {
+  left: 16.5px;
+}
+
+ul .bg-facebook a i,
+ul .bg-googleplus a i {
+  font-size: 22.5px;
+  position: relative;
+  bottom: 8px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+ul .bg-facebook a:hover i,
+ul .bg-googleplus a:hover i {
+  font-size: 27px;
+}
+.fa-chevron-up:before {
+  position: relative;
+  bottom: 21px;
+  font-size: 16px;
+}
+
+.scrolltop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-family: 'Sans-serif';
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(45, 44, 47);
+  color: #b3b3b3;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.scrolltop:visited {
+  color: #b3b3b3;
+}
+.scrolltop:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f34e2a;
+}
+.scrolltop:focus {
+  text-decoration: none;
+}
+.scrolltop.active {
+  visibility: visible;
+  opacity: 1;
+}
