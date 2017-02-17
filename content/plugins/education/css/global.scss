@@ -120,8 +120,10 @@ h3.heading-style-5,
 h4.heading-style-5,
 h5.heading-style-5,
 h6.heading-style-5 {
-  font-size: 16px;
-  font-weight: normal;
+  font: {
+    size: 16px;
+    weight: bold;
+  }
   line-height: 30px;
   letter-spacing: 3px;
   margin-bottom: 11px;
@@ -140,10 +142,12 @@ h6.heading-style-6 {
 }
 
 p {
+  font: {
+    family: $samim;
+    size: 13px;
+    weight: normal;
+  }
   padding-bottom: 30px;
-  font-family: $samim;
-  font-size: 13px;
   line-height: 35px;
-  font-weight: normal;
   margin-bottom: 0;
 }
