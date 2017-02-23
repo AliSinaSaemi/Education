@@ -496,39 +496,41 @@ div.spacer {
   left: 0px;
   bottom: 0px; }
 
+.unhover-list, #listGroups div.listItems article .item-content h6 a, #listGroups ol li a, #listGroups ul li a {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.hover-list, #listGroups div.listItems article .item-content h6 a:hover, #listGroups ol li a:hover, #listGroups ul li a:hover {
+  text-decoration: none; }
+
 #listGroups div.listItems article .item-content {
   overflow: hidden;
   position: relative;
   bottom: 10px; }
-
 #listGroups div.listItems article i {
   float: right;
   font-size: 14px;
   line-height: 30px;
   min-width: 36px; }
-
-#listGroups ol {
-  counter-reset: list; }
-
 #listGroups ol,
 #listGroups ul {
   margin-bottom: 30px;
   list-style: none;
   font-family: 'samim';
   line-height: 30px; }
-
-#listGroups ol li, #listGroups ul li {
-  font-size: 13px;
-  padding-left: 20px;
-  position: relative; }
-
-#listGroups ol li::before {
-  content: counter(list) ".";
-  counter-increment: list;
-  display: inline-block;
-  margin-left: 5px;
-  padding: 0px; }
-
+  #listGroups ol li,
+  #listGroups ul li {
+    font-size: 13px;
+    padding-left: 20px;
+    position: relative; }
+#listGroups ol {
+  counter-reset: list; }
+  #listGroups ol li::before {
+    content: counter(list) ".";
+    counter-increment: list;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0px; }
 #listGroups ul li::after {
   position: absolute;
   right: -18px;
@@ -537,38 +539,23 @@ div.spacer {
   font-size: 7px;
   content: '\f111'; }
 
-#listGroups div.listItems article div.item-content h6 a,
-#listGroups ol li a,
-#listGroups ul li a {
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
-
-#listGroups div.listItems article div.item-content h6 a:hover,
-#listGroups ol li a:hover,
-#listGroups ul li a:hover {
-  text-decoration: none; }
-
 #listGroups h6 {
   font-size: 12px; }
 
 blockquote {
   margin-right: 100px; }
+  blockquote:before {
+    display: block;
+    /* If something happen to this content element put this (ΓÇ£) back */
+    content: '*';
+    font: 170px/15px 'Open Sans', sans-serif;
+    padding-top: 27px; }
+  blockquote p {
+    margin-top: 10px; }
+  blockquote h6#cite {
+    font-size: 20px; }
 
-blockquote:before {
-  display: block;
-  /* If something happen to this content element put this (ΓÇ£) back */
-  content: '*';
-  font: 170px/15px 'Open Sans', sans-serif;
-  padding-top: 27px; }
-
-blockquote p {
-  margin-top: 10px; }
-
-blockquote h6#cite {
-  font-size: 20px; }
-
-.account-mini-page input,
-#form div.controlls .form-control {
+.form-input, .account-mini-page input, #form div.controlls .form-control {
   border: none;
   border-radius: 0;
   padding: 8px 20px;
@@ -576,53 +563,46 @@ blockquote h6#cite {
   font-family: 'samim';
   height: 46px; }
 
+#form div.controlls:nth-child(2) {
+  position: relative; }
 #form div.controlls .form-control:nth-child(2) {
   border: 1px solid #f34a2e; }
-
 #form div.controlls mark {
   font-size: 10px;
   font-family: 'samim';
   position: absolute;
   top: -18px; }
-
-#form div.controlls mark:after {
-  content: "\f148";
-  font: normal normal normal 12px/1 FontAwesome;
-  position: absolute;
-  left: -7px;
-  top: 7px;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-#form div.controlls:nth-child(2) {
-  position: relative; }
-
+  #form div.controlls mark:after {
+    content: "\f148";
+    font: normal normal normal 12px/1 FontAwesome;
+    position: absolute;
+    left: -7px;
+    top: 7px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
 #form div.form-group textarea {
   padding: 8px 20px;
   font-family: 'samim';
   border: none;
   border-radius: 0;
   height: 123px; }
-
-label.form-check-label {
-  font-family: 'samim'; }
-
 #form select.form-control {
   margin-bottom: 24px;
   border: none;
   border-radius: 0; }
 
+label.form-check-label {
+  font-family: 'samim'; }
+
 .forget-links li {
   margin-right: 0;
   margin-bottom: 10px;
   font-size: 14px; }
-
-.forget-links li a {
-  -webkit-transition: .5s;
-  transition: .5s; }
-
-.forget-links li a:hover {
-  text-decoration: underline; }
+  .forget-links li a {
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .forget-links li a:hover {
+      text-decoration: underline; }
 
 .chekbox-rotate:checked {
   -webkit-transform: rotate(360deg);
@@ -637,6 +617,13 @@ label.form-check-label {
 .checkbox-away:checked {
   -webkit-transform: translateX(-10px);
   transform: translateX(-10px); }
+
+.input-radio-checkbox, span.checkbox input[type="checkbox"], span.checkbox input[type="radio"] {
+  margin-top: 1px \9;
+  line-height: normal;
+  position: relative;
+  top: 1.5px;
+  left: 10px; }
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -656,49 +643,43 @@ span.checkbox {
   border: 1px solid none;
   border-radius: 0;
   vertical-align: middle; }
-
-span.checkbox input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  margin: 0;
-  opacity: 0; }
-
-span.checkbox input[type="checkbox"]:checked + label.checkbox-inner:before {
-  content: "\f00c";
-  width: 20px;
-  text-align: center; }
-
-span.checkbox label.checkbox-inner {
-  left: 0;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0; }
-
-span.checkbox label.checkbox-inner:before {
-  content: '';
-  font-family: 'FontAwesome';
-  font-size: 12px;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-span.checkbox + label {
-  font-size: 13px;
-  margin: 0 0 0 10px;
-  vertical-align: middle; }
+  span.checkbox input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    margin: 0;
+    opacity: 0; }
+  span.checkbox label.checkbox-inner {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+    span.checkbox label.checkbox-inner label.checkbox-inner:before {
+      content: '';
+      font-family: 'FontAwesome';
+      font-size: 12px;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
+  span.checkbox + label {
+    font-size: 13px;
+    margin: 0 0 0 10px;
+    vertical-align: middle; }
+  span.checkbox input[type='checkbox']:checked + label.checkbox-inner:before {
+    content: "\f00c";
+    width: 20px;
+    text-align: center; }
 
 .form-inline .checkbox input[type="checkbox"] {
   float: none; }
 
-input[type="radio"],
-input[type="checkbox"] {
+.input-radio-checkbox-2, input[type="checkbox"], span.radio input[type="radio"] {
   margin: -2px 0 0;
   line-height: normal; }
 
@@ -709,7 +690,7 @@ input[type="reset"],
 input[type="button"],
 input[type="radio"],
 input[type="checkbox"] {
-  width: auto; }
+  width: "auto"; }
 
 span.radio {
   display: inline-block;
@@ -723,81 +704,66 @@ span.radio {
   border-radius: 50%;
   border: none;
   background: #e8e8e8; }
+  span.radio input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    margin: 0;
+    opacity: 0; }
+  span.radio input[type='radio']:checked + label.radio-inner:before {
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 10px;
+    background: #f34a2e; }
+  span.radio label.radio-inner {
+    bottom: 0;
+    left: 0;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  span.radio + label {
+    font-size: 13px;
+    margin: 0 0 0 10px;
+    vertical-align: middle; }
 
-span.radio input[type="radio"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  margin: 0;
-  opacity: 0; }
-
-span.radio input[type="radio"]:checked + label.radio-inner:before {
-  border-radius: 50%;
-  content: "";
-  height: 10px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 10px;
-  background: #f34a2e; }
-
-span.radio label.radio-inner {
-  bottom: 0;
-  left: 0;
-  line-height: 18px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-span.radio + label {
-  font-size: 13px;
-  margin: 0 0 0 10px;
-  vertical-align: middle; }
-
-.radio,
-.checkbox {
+.radio-fake, .radio, .checkbox {
   min-height: 30px; }
 
-.radio input[type="radio"],
-.checkbox input[type="checkbox"] {
+.radio-fake-input, .radio input[type="radio"], .checkbox input[type="checkbox"] {
   float: left; }
 
-.controls > .radio:first-child,
-.controls > .checkbox:first-child {
+.controls .first-child-fake, .controls > .radio:first-child, .controls > .checkbox:first-child {
   padding-top: 5px; }
 
-.radio.inline,
-.checkbox.inline {
+.radio .inline,
+.checkbox .inline {
   display: inline-block;
   padding-top: 5px;
   margin-bottom: 0;
   vertical-align: middle; }
 
-.radio.inline + .radio.inline,
-.checkbox.inline + .checkbox.inline {
+.radio-checkbox-in-fake, .radio.inline + .radio.inline, .checkbox.inline + .checkbox.inline {
   margin-left: 10px; }
 
-.controls-row .checkbox[class*="span"],
-.controls-row .radio[class*="span"] {
+.controls-row .class-span-fake, .controls-row .checkbox[class*="span"], .controls-row .radio[class*="span"] {
   padding-top: 5px; }
 
-.form-search .radio,
-.form-search .checkbox,
-.form-inline .radio,
-.form-inline .checkbox {
+.form-search-fake, .form-search .radio, .form-inline .radio, .form-search .checkbox, .form-inline .checkbox {
   padding-left: 0;
   margin-bottom: 0;
   vertical-align: middle; }
 
-.form-search .radio input[type="radio"],
-.form-search .checkbox input[type="checkbox"],
-.form-inline .radio input[type="radio"],
-.form-inline .checkbox input[type="checkbox"] {
+.form-search-input-fake, .form-search .radio input[type="radio"], .form-inline .radio input[type="radio"], .form-search .checkbox input[type="checkbox"], .form-inline .checkbox input[type="checkbox"] {
   float: left;
   margin-right: 3px;
   margin-left: 0; }
@@ -828,9 +794,8 @@ span.radio + label {
   text-transform: uppercase;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
-
-.btn-form:hover {
-  text-decoration: none; }
+  .btn-form:hover {
+    text-decoration: none; }
 
 .openbtn {
   position: relative;
@@ -838,24 +803,19 @@ span.radio + label {
   top: 24px;
   text-align: left; }
 
-#tabs ul li a {
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s; }
-
-#tabs ul li a.active,
-#tabs ul li a:hover {
-  text-decoration: none;
-  border-bottom: 2px solid #f34a2e;
-  margin-bottom: 10px; }
-
 #tabs ul li {
   font-family: 'yekan';
   margin-right: -3.5px;
   font-size: 15px; }
-
-#tabs ul li:first-child {
-  margin-right: 0; }
-
+  #tabs ul li:first-child {
+    margin-right: 0; }
+  #tabs ul li a {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s; }
+    #tabs ul li a.active, #tabs ul li a:hover {
+      text-decoration: none;
+      border-bottom: 2px solid #f34a2e;
+      margin-bottom: 10px; }
 #tabs p {
   margin-top: 40px; }
 
@@ -2229,8 +2189,8 @@ div.progress-horizantal p {
   #listGroups ul li,
   #listGroups ol li {
     font-size: 15px; }
-  #listGroups h6 {
-    font-size: 15px; }
+  #listGroups div.listItems h6 {
+    font-size: 14px; }
 
   .item_img {
     float: left;
