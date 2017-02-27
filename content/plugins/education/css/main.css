@@ -1482,27 +1482,27 @@ a.link-text:hover {
 
 mark {
   background-color: #f34a2e;
-  color: #fff; }
+  color: #ffffff; }
 
 div.spacer {
   background-color: #d8d8d8; }
 
 .navbar a i {
-  color: #fff; }
+  color: #ffffff; }
 
 .navbar a:hover i {
   color: #f34a2e; }
 
 .closebtn {
   background-color: #1a1a1b;
-  color: #fff; }
+  color: #ffffff; }
 
 .sub-menu {
   background-color: #2d2c2f; }
 
 .sub-menu .btn-form:hover {
   background-color: #f34a2e;
-  color: #fff; }
+  color: #ffffff; }
 
 #listGroups div.listItems article i {
   color: #2d2c2f; }
@@ -1540,7 +1540,7 @@ input[type="checkbox"][readonly] {
   background-color: transparent; }
 
 div.panel_2 {
-  background-color: #fff; }
+  background-color: #ffffff; }
 
 .panel_2 p {
   color: #2d2c2f; }
@@ -1572,11 +1572,11 @@ div.panel_2 {
 
 .btn-form:hover {
   background-color: #f34a2e;
-  color: #fff; }
+  color: #ffffff; }
 
 .openbtn:hover {
   background-color: #2d2c2f;
-  color: #fff; }
+  color: #ffffff; }
 
 .item_img {
   float: none;
@@ -1591,10 +1591,10 @@ div.panel_2 {
   color: #f34a2e; }
 
 a.collapse-selector:hover {
-  color: #fff; }
+  color: #ffffff; }
 
 .panel-body {
-  background: #fff; }
+  background: #ffffff; }
 
 div.panel-heading h5 {
   background-color: #f34a2e;
@@ -1602,7 +1602,7 @@ div.panel-heading h5 {
 
 div.panel-heading h5:hover {
   background-color: #262626;
-  color: #fff; }
+  color: #ffffff; }
 
 .fancy-collapse-panel .panel-heading a {
   background-color: #b1b1b1;
@@ -1614,13 +1614,13 @@ div.panel-heading h5:hover {
 
 tr.filters {
   background-color: #f34a2e;
-  color: #fff; }
+  color: #ffffff; }
 
 span.checkbox label.checkbox-inner:before {
   color: #f34a2e; }
 
 .dropdowner div {
-  background: #fff; }
+  background: #ffffff; }
 
 .dropdowner .selected,
 .dropdowner li {
@@ -1629,57 +1629,57 @@ span.checkbox label.checkbox-inner:before {
 
 .dropdowner li.focus {
   background: #f34a2e;
-  color: #fff; }
+  color: #ffffff; }
 
 .dropdowner {
   background: #e4e4e4; }
 
 .panel-title p {
-  color: #fff; }
+  color: #ffffff; }
 
 .panel-heading {
-  color: #fff;
+  color: #ffffff;
   background-color: #f33d2e; }
 
 .panel-heading:hover {
   background-color: #2d2c2f; }
 
 .panel-title a {
-  color: #fff; }
+  color: #ffffff; }
 
 .item-content-bevel {
   background: #454c59;
-  color: #fff; }
+  color: #ffffff; }
 
 .price-special {
   background-color: #f34a2e; }
 
 .price-bevel {
   background: #4ec4c8;
-  color: #fff; }
+  color: #ffffff; }
 
 .item-content-curve:hover .content-inner-curve .content-top h1,
 .item-content-curve:hover .content-inner-curve .content-top .price-curve,
 .item-content-curve:hover .content-inner-curve .content-top .price-curve strong {
-  color: #fff; }
+  color: #ffffff; }
 
 .item-content-curve:hover {
   background: #4ec4c8;
-  color: #fff; }
+  color: #ffffff; }
 
 .item-content-curve:hover .content-inner-curve {
   background: #454c59; }
 
 .item-content-curve:hover {
   background: #4ec4c8;
-  color: #fff; }
+  color: #ffffff; }
 
 .content-inner-curve {
   background: #4ec4c8; }
 
 .item-content-curve {
   background: #454c59;
-  color: #fff; }
+  color: #ffffff; }
 
 .price-bevel:after,
 .price-special:after,
@@ -1707,7 +1707,7 @@ hr.distincter {
   background: #2d2c2f; }
 
 #cssmenu ul ul a {
-  color: #fff; }
+  color: #ffffff; }
 
 #cssmenu ul ul a:before {
   color: #e94f31; }
@@ -1716,13 +1716,13 @@ hr.distincter {
   color: #e94f31; }
 
 .low-device-nav h1 a {
-  color: #fff; }
+  color: #ffffff; }
 
 hr.xxs-underline {
-  border-color: #fff; }
+  border-color: #ffffff; }
 
 .col-3-list a {
-  color: #fff; }
+  color: #ffffff; }
 
 .col-3-list a.active {
   color: #f34a2e; }
@@ -1731,14 +1731,14 @@ hr.xxs-underline {
   color: #f34a2e; }
 
 .multi-column-dropdown {
-  color: #fff; }
+  color: #ffffff; }
 
 .search-box h4 {
-  color: #fff; }
+  color: #ffffff; }
 
 .search-box input {
   background-color: #1f1f21;
-  color: #fff; }
+  color: #ffffff; }
 
 .social-medias ul .bg-googleplus {
   background-color: #ef472b; }
@@ -1750,7 +1750,7 @@ hr.xxs-underline {
   border-top-color: #999; }
 
 .panel {
-  border-color: #fff; }
+  border-color: #ffffff; }
 
 #cssmenu {
   background-color: #2d2c2f; }
@@ -1780,43 +1780,43 @@ hr.distincter {
   background: #2d2c2f; }
 
 #cssmenu ul ul a {
-  color: #fff; }
+  color: #ffffff; }
 
 #cssmenu ul ul a:before {
   color: #e94f31; }
 
 #cssmenu ul ul a:hover {
-  color: #FFF; }
+  color: #ffffff; }
 
 .low-device-nav h1 a {
-  color: #fff; }
+  color: #ffffff; }
 
 .col-3-list a {
-  color: #fff; }
+  color: #ffffff; }
 
 .col-3-list a.active {
   color: #f34a2e; }
 
 .multi-column-dropdown {
-  color: #fff; }
+  color: #ffffff; }
 
 .search-box {
   background-color: #2d2c2f; }
 
 .search-box h4 {
-  color: #fff; }
+  color: #ffffff; }
 
 .search-box input {
   background-color: #1f1f21;
-  color: #fff; }
+  color: #ffffff; }
 
 .search-box button {
   background-color: #f34a2e;
-  color: #fff; }
+  color: #ffffff; }
 
 .search-box button:hover {
   background-color: #1f1f21;
-  color: #fff; }
+  color: #ffffff; }
 
 .account-mini-page span.checkbox {
   margin-right: 10px;
@@ -1824,40 +1824,40 @@ hr.distincter {
 
 .account-mini-page input {
   background-color: #1f1f21;
-  color: #fff; }
+  color: #ffffff; }
 
 .mini-form-title {
-  color: #fff; }
+  color: #ffffff; }
 
 .account-mini-page label {
-  color: #fff; }
+  color: #ffffff; }
 
 .account-mini-page .submit {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000; }
 
 .forget-links li a {
   color: #919191; }
 
 .forget-links li a:hover {
-  color: #fff; }
+  color: #ffffff; }
 
 .social-medias ul .bg-facebook,
 .social-medias ul .bg-googleplus {
-  color: #fff; }
+  color: #ffffff; }
 
 ul .bg-facebook a:hover i,
 ul .bg-googleplus a:hover i {
-  color: #Fff; }
+  color: #ffffff; }
 
 .progress {
   background-color: #f5f5f5; }
 
 .progress {
-  background-color: #fff; }
+  background-color: #ffffff; }
 
 .progress-bar {
-  color: #fff;
+  color: #ffffff;
   background-color: #428bca; }
 
 .progress-bar {
@@ -1873,13 +1873,13 @@ div.progress-horizantal p {
   background-color: #2d2c2f; }
 
 .social-medias ul li a {
-  color: #fff; }
+  color: #ffffff; }
 
 .social-medias ul li a:hover {
   color: #f34a2e; }
 
 .bar {
-  background-color: #fff; }
+  background-color: #ffffff; }
 
 .bar p {
   color: #000; }
@@ -1889,7 +1889,7 @@ div.progress-horizantal p {
 
 .black-counter {
   background-color: #454c59;
-  color: #fff; }
+  color: #ffffff; }
 
 /* @Media Queries
 ===========================================================================*/
