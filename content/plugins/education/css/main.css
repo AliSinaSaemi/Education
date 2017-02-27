@@ -423,9 +423,29 @@ hr.xxs-underline {
   .account-mini-page .social-medias ul li {
     margin-right: 0; }
 
+/* Content 
+----------------------------------*/
+hr.titleUnderLine {
+  border: 1.5px solid #2d2c2f;
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 35px; }
+
+a.link-text {
+  text-decoration: underline;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s; }
+
+mark {
+  padding: 0 5px; }
+
+div.spacer {
+  height: 1px;
+  margin: 50px 0; }
+
 .fa-chevron-up:before {
   position: relative;
-  bottom: 21px;
+  bottom: 16px;
   font-size: 16px; }
 
 .scrolltop {
@@ -455,29 +475,10 @@ hr.xxs-underline {
     background-color: #f34e2a; }
   .scrolltop:focus {
     text-decoration: none; }
-  .scrolltop .active {
-    visibility: visible;
-    opacity: 1; }
 
-/* Content 
-----------------------------------*/
-hr.titleUnderLine {
-  border: 1.5px solid #2d2c2f;
-  width: 100px;
-  margin-top: 30px;
-  margin-bottom: 35px; }
-
-a.link-text {
-  text-decoration: underline;
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s; }
-
-mark {
-  padding: 0 5px; }
-
-div.spacer {
-  height: 1px;
-  margin: 50px 0; }
+.scrolltop.active {
+  visibility: visible;
+  opacity: 1; }
 
 .content:before, .content:after {
   content: '';
@@ -2135,7 +2136,7 @@ div.progress-horizantal p {
   .content:after {
     border-bottom: 0px solid transparent;
     border-right: 0px solid transparent;
-    border-left: 950px solid #d8d8d8;
+    border-left: 850px solid #d8d8d8;
     left: 0px;
     bottom: 0px; }
 
@@ -2145,7 +2146,7 @@ div.progress-horizantal p {
     border: 46px solid transparent;
     border-top: 0px solid transparent;
     border-left: 0px solid transparent;
-    border-right: 950px solid #d8d8d8;
+    border-right: 850px solid #d8d8d8;
     right: 0px;
     top: 0px; } }
 @media (min-width: 768px) and (max-width: 996px) {

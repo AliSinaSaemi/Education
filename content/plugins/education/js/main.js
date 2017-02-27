@@ -5,11 +5,13 @@ $(document).ready(function () {
 });
 
 function openNav() {
-  document.getElementById("cssmenu").style.width = "250px";
+  document.getElementById("cssmenu").style.width = "100%";
+  document.getElementById("cssmenu").style.opacity = "1";
 }
 
 function closeNav() {
   document.getElementById("cssmenu").style.width = "0";
+  document.getElementById("cssmenu").style.opacity = "0";
 }
 (function ($) {
   $(document).ready(function () {
