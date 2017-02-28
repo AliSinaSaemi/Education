@@ -603,6 +603,24 @@ span.radio {
   p {
     margin-top: 40px;
   }
+  /* Style the tab content */
+  .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      -webkit-animation: fadeEffect 1s;
+      animation: fadeEffect 1s;
+  }
+  
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
 }
 .speed-dropdowner-fake {
   -webkit-transition: all 150ms ease-in-out;

@@ -174,15 +174,14 @@ header {
     #cssmenu > ul > li > a {
       font-size: 14px;
       display: block;
-      border: 1px solid #ba2f14;
-      border-top: none;
       text-shadow: 0 -1px 1px #751d0c; }
       #cssmenu > ul > li > a:hover {
         text-decoration: none; }
       #cssmenu > ul > li > a > span {
         display: block;
         padding: 12px 10px;
-        border-radius: 4px; }
+        border-radius: 4px;
+        font-family: "yekan"; }
     #cssmenu > ul > li li:hover {
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e84323), color-stop(100%, #c33115));
       background: -webkit-linear-gradient(#e84323 0%, #c33115 100%);
@@ -205,9 +204,10 @@ header {
     background: url(../../../images/icon_plus.png) 5% center no-repeat; }
   #cssmenu > ul > li.has-sub.opened > a span {
     background: url(../../../images/icon_minus.png) 5% center no-repeat; }
+  #cssmenu ul li {
+    margin-bottom: 5px; }
   #cssmenu ul ul {
-    display: none;
-    border-right: 1px solid #a2a194; }
+    display: none; }
     #cssmenu ul ul li {
       padding: 0;
       border-top: none; }
@@ -804,22 +804,39 @@ span.radio {
   top: 24px;
   text-align: left; }
 
-#tabs ul li {
-  font-family: 'yekan';
-  margin-right: -3.5px;
-  font-size: 15px; }
-  #tabs ul li:first-child {
-    margin-right: 0; }
-  #tabs ul li a {
-    -webkit-transition-duration: .2s;
-    transition-duration: .2s; }
-    #tabs ul li a.active, #tabs ul li a:hover {
-      text-decoration: none;
-      border-bottom: 2px solid #f34a2e;
-      margin-bottom: 10px; }
-#tabs p {
-  margin-top: 40px; }
-
+#tabs {
+  /* Style the tab content */
+  /* Fade in tabs */ }
+  #tabs ul li {
+    font-family: 'yekan';
+    margin-right: -3.5px;
+    font-size: 15px; }
+    #tabs ul li:first-child {
+      margin-right: 0; }
+    #tabs ul li a {
+      -webkit-transition-duration: .2s;
+      transition-duration: .2s; }
+      #tabs ul li a.active, #tabs ul li a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #f34a2e;
+        margin-bottom: 10px; }
+  #tabs p {
+    margin-top: 40px; }
+  #tabs .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; }
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .speed-dropdowner-fake, .dropdowner, .dropdowner div, .dropdowner div::after, .dropdowner li {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out; }
@@ -1766,7 +1783,7 @@ hr.distincter {
   background: #2d2c2f; }
 
 #cssmenu > ul > li {
-  background: #e94f31; }
+  background: #1f1f21; }
 
 #cssmenu > ul > li:hover {
   background: #e84323; }

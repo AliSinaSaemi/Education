@@ -44,8 +44,6 @@ header {
       > a {
         font-size: 14px;
         display: block;
-        border: 1px solid #ba2f14;
-        border-top: none;
         text-shadow: 0 -1px 1px #751d0c;
         &:hover {
           text-decoration: none;
@@ -54,6 +52,7 @@ header {
           display: block;
           padding: 12px 10px;
           border-radius: 4px;
+          font-family: "yekan";
         }
       }
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
@@ -108,9 +107,11 @@ header {
     }
   }
   ul {
+    li {
+      margin-bottom: 5px;
+    }
     ul {
       display: none;
-      border-right: 1px solid #a2a194;
       li {
         padding: 0;
         border-top: none;
