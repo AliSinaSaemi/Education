@@ -23,15 +23,13 @@
   padding-bottom: 75px;
 }
 
-.social-medias {
-  font-size: 40px;
-  margin-bottom: 25px;
-}
 
 .social-medias {
+    margin-bottom: 25px;
   ul {
     li {
       margin-right: 20px;
+      font-size: 40px;
       a {
         -webkit-transition: .5s;
         transition: .5s;

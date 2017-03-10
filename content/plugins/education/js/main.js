@@ -13,6 +13,18 @@ function closeNav() {
   document.getElementById("cssmenu").style.width = "0";
   document.getElementById("cssmenu").style.opacity = "0";
 }
+
+var close = document.getElementsByClassName("close-alert");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+
+
 (function ($) {
   $(document).ready(function () {
     $('#cssmenu > ul > li > a').click(function () {
