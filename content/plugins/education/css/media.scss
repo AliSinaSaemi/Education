@@ -1,22 +1,19 @@
 // 1200px 
 $min-1200: "(min-width: 1200px)";
 $max-1200: "(max-width: 1200px)";
-
 // 996px 
 $min-996: "(min-width: 996px)";
 $max-996: "(max-width: 996px)";
-
 // 768px
 $min-768: "(min-width: 768px)";
 $max-768: "(max-width: 768px)";
-
 // Custom sizes
+$min-991: "(min-width: 991px)";
 $max-767: "(max-width: 767px)";
 $min-479: "(min-width: 479px)";
 $min-460: "(min-width: 460px)";
 $max-347: "(max-width: 347px)";
 $min-348: "(min-width: 348px)";
-
 @media #{$max-768} {
   #provideEducation {
     img {
@@ -123,7 +120,10 @@ $min-348: "(min-width: 348px)";
   }
 }
 
-@media #{$max-347} /*(max-width: 347px)*/ {
+@media #{$max-347}
+/*(max-width: 347px)*/
+
+{
   .col-xxs-12 {
     width: 100%;
     text-align: center;
@@ -143,7 +143,10 @@ $min-348: "(min-width: 348px)";
   }
 }
 
-@media #{$min-348}  /*(min-width: 348px)*/ {
+@media #{$min-348}
+/*(min-width: 348px)*/
+
+{
   hr.xxs-underline {
     display: none;
   }
@@ -382,12 +385,40 @@ $min-348: "(min-width: 348px)";
   }
 }
 
-@media #{$min-996} and #{$max-1200} {
+@media #{$min-991} and #{$max-1200} {
   .dropdown-menu.columns-3 {
     min-width: 810px;
     right: -45px;
   }
   .multi-column-dropdown {
     padding: 0;
+  }
+  .center-block-edu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-md-12-edu,
+  .col-md-4-edu {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+  }
+  .col-md-12-edu {
+    width: 100%;
+  }
+  .col-md-4-edu {
+    width: 33.33333333%;
+  }
+  .card-action.secondary {
+    margin: 0;
+  }
+  .card-action.resume {
+    margin-bottom: 11px;
+  }
+  .card-actions {
+    top: 205px;
   }
 }

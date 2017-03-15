@@ -1471,7 +1471,6 @@ div.progress-horizantal {
   background-color: #ff4747;
 }
 
-
 .alert p {
   color: #292929;
   padding-bottom: 0;
@@ -1609,8 +1608,17 @@ a.card-box {
   height: 20px;
 }
 
-.topic-javascript .card-progress {
+// CODE FINDER: 001
+.topic-javascript .card-progress-1 {
   background-color: #c25975;
+}
+
+.topic-javascript .card-progress-2 {
+  background-color: #436eb2;
+}
+
+.topic-javascript .card-progress-3 {
+  background-color: #4adb7d;
 }
 
 .card-progress {
@@ -1645,7 +1653,7 @@ svg:not(:root) {
 .track-icon {
   color: #fff;
   position: relative;
-  right: 266px;
+  right: 100%;
   font-size: 22px;
   top: 1px;
 }
@@ -1663,15 +1671,6 @@ svg {
   transition: fill 300ms 0s ease, stroke 300ms 0s ease, opacity 300ms 0s ease, -webkit-transform 300ms 0s ease;
   transition: fill 300ms 0s ease, stroke 300ms 0s ease, transform 300ms 0s ease, opacity 300ms 0s ease;
   transition: fill 300ms 0s ease, stroke 300ms 0s ease, transform 300ms 0s ease, opacity 300ms 0s ease, -webkit-transform 300ms 0s ease;
-}
-
-ul {
-  list-style: none;
-}
-
-ul,
-ol {
-  font-size: 14px;
 }
 
 .card-stages {
@@ -1705,15 +1704,11 @@ ol {
   right: 30px;
   padding-left: 10px;
   text-align: right;
-  min-width: 80px;
+  min-width: 60px;
 }
 
-.add-javascript-background-color,
-.add-javascript-background-color-before:before,
-.add-javascript-background-color-after:after,
-.add-javascript-background-color-on-hover:hover,
-.add-javascript-background-color-to-child-on-hover:hover .add-javascript-background-color-on-parent-hover {
-  background-color: #c25975 !important;
+.add-javascript-background-color {
+  background-color: transparent !important;
 }
 
 .card-type {
@@ -1722,10 +1717,6 @@ ol {
   line-height: 12px;
   font-size: 14px;
   color: #7b8b8e;
-}
-
-strong {
-  font-weight: 500;
 }
 
 .card-title {
@@ -1753,12 +1744,6 @@ strong {
   color: #7b8b8e;
 }
 
-p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
 .card-action.secondary {
   float: right;
   margin: 0 0 0 10px;
@@ -1767,10 +1752,7 @@ p {
 
 .track .card-action.resume,
 .bookmarked:not(.upcoming) .card-action.resume,
-.in-progress:not(.upcoming) .card-action.resume,
-.track .card-action.secondary-action,
-.bookmarked:not(.upcoming) .card-action.secondary-action,
-.in-progress:not(.upcoming) .card-action.secondary-action {
+.in-progress:not(.upcoming) .card-action.resume {
   opacity: 1;
 }
 
@@ -1778,59 +1760,43 @@ p {
   margin-left: 0;
 }
 
-.card-action.resume,
-.card-action.secondary-action {
+.card-action.resume {
   float: left;
   -webkit-transition: opacity 0.15s ease 0.15s;
   transition: opacity 0.15s ease 0.15s;
   opacity: 0;
 }
 
-.topic-javascript .card-action.resume .button.button-primary,
-.topic-javascript .card-action.resume .button.primary,
-.topic-javascript .card-action.secondary-action .button.button-primary,
-.topic-javascript .card-action.secondary-action .button.primary {
-  border-color: #bb4665;
-}
-
-.topic-javascript .card-action.resume .button.button-primary,
-.topic-javascript .card-action.resume .button.primary,
-.topic-javascript .card-action.secondary-action .button.button-primary,
-.topic-javascript .card-action.secondary-action .button.primary {
-  background-color: #c25975;
-}
-
-.card-action.resume .button.button-primary,
-.card-action.resume .button.primary,
-.card-action.secondary-action .button.button-primary,
-.card-action.secondary-action .button.primary {
+.card-action.resume .button.primary {
   border-width: 0 0 2px;
   line-height: 34px;
 }
 
-.card-action.resume .button,
-.card-action.secondary-action .button {
+.card-action.resume .button {
   height: 36px;
   padding: 0 22px;
   line-height: 32px;
 }
 
-.topic-javascript .button.primary,
-.topic-javascript .button-primary {
+// CODE FINDER: 002
+.topic-javascript .button.primary {
   background-color: #c25975;
   border-color: #c25975;
 }
 
-.button.primary:not(.has-topic-color),
-.button-primary:not(.has-topic-color) {
-  color: #fff;
-  font-family: "yekan";
+.card-action.resume .button.success {
+  background-color: #436eb2;
+  border-color: #436eb2;
 }
 
-.button.primary,
-.button-primary {
-  background-color: #5fcf80;
-  border: solid 2px #5fcf80;
+.card-action.resume .button.grass {
+  background-color: #4adb7d;
+  border-color: #4adb7d;
+}
+
+.button.primary:not(.has-topic-color) {
+  color: #fff;
+  font-family: "yekan";
 }
 
 .topic-javascript .button {
@@ -1962,33 +1928,30 @@ p {
 .topic-javascript .card-action-trailer a:hover,
 .topic-javascript .card-action-trailer a:focus,
 .topic-javascript .card-action-trailer span:hover,
-.topic-javascript .card-action-trailer span:focus,
-.topic-javascript .card-action.queueable a:hover,
-.topic-javascript .card-action.queueable a:focus,
-.topic-javascript .card-action.queueable span:hover,
-.topic-javascript .card-action.queueable span:focus,
-.topic-javascript .card-action.bookmarkable a:hover,
-.topic-javascript .card-action.bookmarkable a:focus,
-.topic-javascript .card-action.bookmarkable span:hover,
-.topic-javascript .card-action.bookmarkable span:focus {
+.topic-javascript .card-action-trailer span:focus {
   border-color: #aa3e5b;
 }
 
 .topic-javascript .card-action-trailer:hover a,
 .topic-javascript .card-action-trailer:focus a,
-.topic-javascript .card-action-trailer.loading a,
-.topic-javascript .card-action.queueable:hover a,
-.topic-javascript .card-action.queueable:focus a,
-.topic-javascript .card-action.queueable.loading a,
-.topic-javascript .card-action.bookmarkable:hover a,
-.topic-javascript .card-action.bookmarkable:focus a,
-.topic-javascript .card-action.bookmarkable.loading a {
+.topic-javascript .card-action-trailer.loading a {
   border-color: #c25975;
 }
 
+// CODE FINDER: 004
 .topic-javascript .card-action-button:hover,
 .topic-javascript .card-action-button:focus {
   border-color: #c25975;
+}
+
+.topic-javascript .success:hover,
+.topic-javascript .success:focus {
+  border-color: #436eb2;
+}
+
+.topic-javascript .grass:hover,
+.topic-javascript .grass:focus {
+  border-color: #4adb7d;
 }
 
 .card-action-button:hover,
@@ -2020,8 +1983,17 @@ p {
   transform: translate(-50%, -10px);
 }
 
+// CODE FINDER: 003
 .card-action:hover .play-icon {
   color: #c25975;
+}
+
+.card-action:hover .play-icon.success {
+  color: #436eb2;
+}
+
+.card-action:hover .play-icon.grass {
+  color: #4adb7d;
 }
 
 @-webkit-keyframes spin {

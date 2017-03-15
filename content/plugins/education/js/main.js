@@ -1,3 +1,5 @@
+$('nav').sticky();
+
 $(document).ready(function () {
   $("#searchButton").click(function () {
     $("#searchBox").toggleClass("search-show");
@@ -720,5 +722,3 @@ dropdownSelectors.on({
     }
   },
 });
-
-$('nav').sticky();

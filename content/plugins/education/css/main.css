@@ -1550,8 +1550,14 @@ a.card-box {
 .track .card-box.card-link:hover:before {
   height: 20px; }
 
-.topic-javascript .card-progress {
+.topic-javascript .card-progress-1 {
   background-color: #c25975; }
+
+.topic-javascript .card-progress-2 {
+  background-color: #436eb2; }
+
+.topic-javascript .card-progress-3 {
+  background-color: #4adb7d; }
 
 .card-progress {
   position: absolute;
@@ -1582,7 +1588,7 @@ svg:not(:root) {
 .track-icon {
   color: #fff;
   position: relative;
-  right: 266px;
+  right: 100%;
   font-size: 22px;
   top: 1px; }
 
@@ -1599,13 +1605,6 @@ svg {
   transition: fill 300ms 0s ease, stroke 300ms 0s ease, opacity 300ms 0s ease, -webkit-transform 300ms 0s ease;
   transition: fill 300ms 0s ease, stroke 300ms 0s ease, transform 300ms 0s ease, opacity 300ms 0s ease;
   transition: fill 300ms 0s ease, stroke 300ms 0s ease, transform 300ms 0s ease, opacity 300ms 0s ease, -webkit-transform 300ms 0s ease; }
-
-ul {
-  list-style: none; }
-
-ul,
-ol {
-  font-size: 14px; }
 
 .card-stages {
   display: inline-block;
@@ -1635,14 +1634,10 @@ ol {
   right: 30px;
   padding-left: 10px;
   text-align: right;
-  min-width: 80px; }
+  min-width: 60px; }
 
-.add-javascript-background-color,
-.add-javascript-background-color-before:before,
-.add-javascript-background-color-after:after,
-.add-javascript-background-color-on-hover:hover,
-.add-javascript-background-color-to-child-on-hover:hover .add-javascript-background-color-on-parent-hover {
-  background-color: #c25975 !important; }
+.add-javascript-background-color {
+  background-color: transparent !important; }
 
 .card-type {
   display: block;
@@ -1650,9 +1645,6 @@ ol {
   line-height: 12px;
   font-size: 14px;
   color: #7b8b8e; }
-
-strong {
-  font-weight: 500; }
 
 .card-title {
   font-size: 18px;
@@ -1676,11 +1668,6 @@ strong {
   margin: 0;
   color: #7b8b8e; }
 
-p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 15px; }
-
 .card-action.secondary {
   float: right;
   margin: 0 0 0 10px;
@@ -1688,61 +1675,42 @@ p {
 
 .track .card-action.resume,
 .bookmarked:not(.upcoming) .card-action.resume,
-.in-progress:not(.upcoming) .card-action.resume,
-.track .card-action.secondary-action,
-.bookmarked:not(.upcoming) .card-action.secondary-action,
-.in-progress:not(.upcoming) .card-action.secondary-action {
+.in-progress:not(.upcoming) .card-action.resume {
   opacity: 1; }
 
 .card-action.resume {
   margin-left: 0; }
 
-.card-action.resume,
-.card-action.secondary-action {
+.card-action.resume {
   float: left;
   -webkit-transition: opacity 0.15s ease 0.15s;
   transition: opacity 0.15s ease 0.15s;
   opacity: 0; }
 
-.topic-javascript .card-action.resume .button.button-primary,
-.topic-javascript .card-action.resume .button.primary,
-.topic-javascript .card-action.secondary-action .button.button-primary,
-.topic-javascript .card-action.secondary-action .button.primary {
-  border-color: #bb4665; }
-
-.topic-javascript .card-action.resume .button.button-primary,
-.topic-javascript .card-action.resume .button.primary,
-.topic-javascript .card-action.secondary-action .button.button-primary,
-.topic-javascript .card-action.secondary-action .button.primary {
-  background-color: #c25975; }
-
-.card-action.resume .button.button-primary,
-.card-action.resume .button.primary,
-.card-action.secondary-action .button.button-primary,
-.card-action.secondary-action .button.primary {
+.card-action.resume .button.primary {
   border-width: 0 0 2px;
   line-height: 34px; }
 
-.card-action.resume .button,
-.card-action.secondary-action .button {
+.card-action.resume .button {
   height: 36px;
   padding: 0 22px;
   line-height: 32px; }
 
-.topic-javascript .button.primary,
-.topic-javascript .button-primary {
+.topic-javascript .button.primary {
   background-color: #c25975;
   border-color: #c25975; }
 
-.button.primary:not(.has-topic-color),
-.button-primary:not(.has-topic-color) {
+.card-action.resume .button.success {
+  background-color: #436eb2;
+  border-color: #436eb2; }
+
+.card-action.resume .button.grass {
+  background-color: #4adb7d;
+  border-color: #4adb7d; }
+
+.button.primary:not(.has-topic-color) {
   color: #fff;
   font-family: "yekan"; }
-
-.button.primary,
-.button-primary {
-  background-color: #5fcf80;
-  border: solid 2px #5fcf80; }
 
 .topic-javascript .button {
   border-color: #c25975;
@@ -1861,31 +1829,25 @@ p {
 .topic-javascript .card-action-trailer a:hover,
 .topic-javascript .card-action-trailer a:focus,
 .topic-javascript .card-action-trailer span:hover,
-.topic-javascript .card-action-trailer span:focus,
-.topic-javascript .card-action.queueable a:hover,
-.topic-javascript .card-action.queueable a:focus,
-.topic-javascript .card-action.queueable span:hover,
-.topic-javascript .card-action.queueable span:focus,
-.topic-javascript .card-action.bookmarkable a:hover,
-.topic-javascript .card-action.bookmarkable a:focus,
-.topic-javascript .card-action.bookmarkable span:hover,
-.topic-javascript .card-action.bookmarkable span:focus {
+.topic-javascript .card-action-trailer span:focus {
   border-color: #aa3e5b; }
 
 .topic-javascript .card-action-trailer:hover a,
 .topic-javascript .card-action-trailer:focus a,
-.topic-javascript .card-action-trailer.loading a,
-.topic-javascript .card-action.queueable:hover a,
-.topic-javascript .card-action.queueable:focus a,
-.topic-javascript .card-action.queueable.loading a,
-.topic-javascript .card-action.bookmarkable:hover a,
-.topic-javascript .card-action.bookmarkable:focus a,
-.topic-javascript .card-action.bookmarkable.loading a {
+.topic-javascript .card-action-trailer.loading a {
   border-color: #c25975; }
 
 .topic-javascript .card-action-button:hover,
 .topic-javascript .card-action-button:focus {
   border-color: #c25975; }
+
+.topic-javascript .success:hover,
+.topic-javascript .success:focus {
+  border-color: #436eb2; }
+
+.topic-javascript .grass:hover,
+.topic-javascript .grass:focus {
+  border-color: #4adb7d; }
 
 .card-action-button:hover,
 .card-action-button:focus,
@@ -1914,6 +1876,12 @@ p {
 
 .card-action:hover .play-icon {
   color: #c25975; }
+
+.card-action:hover .play-icon.success {
+  color: #436eb2; }
+
+.card-action:hover .play-icon.grass {
+  color: #4adb7d; }
 
 @-webkit-keyframes spin {
   from {
@@ -2786,12 +2754,40 @@ div.progress-horizantal p {
 
   .multi-column-dropdown li a {
     font-size: 12px; } }
-@media (min-width: 996px) and (max-width: 1200px) {
+@media (min-width: 991px) and (max-width: 1200px) {
   .dropdown-menu.columns-3 {
     min-width: 810px;
     right: -45px; }
 
   .multi-column-dropdown {
-    padding: 0; } }
+    padding: 0; }
+
+  .center-block-edu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .col-md-12-edu,
+  .col-md-4-edu {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right; }
+
+  .col-md-12-edu {
+    width: 100%; }
+
+  .col-md-4-edu {
+    width: 33.33333333%; }
+
+  .card-action.secondary {
+    margin: 0; }
+
+  .card-action.resume {
+    margin-bottom: 11px; }
+
+  .card-actions {
+    top: 205px; } }
 
 /*# sourceMappingURL=main.css.map */
