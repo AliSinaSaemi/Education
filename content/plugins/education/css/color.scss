@@ -565,3 +565,237 @@ div.progress-horizantal p {
   background-color: $darkGreen;
   color: $white;
 }
+
+// tracks.html
+
+.alert {
+  background-color: #f44336;
+  color: #fff;
+  p {
+    color: #292929;
+    a {
+      color: #fff;
+      &:hover {
+        color: #fff
+      }
+    }
+  }
+}
+
+.alert.success {
+  background-color: #4CAF50;
+}
+
+.alert.info {
+  background-color: #2196F3;
+}
+
+.alert.warning {
+  background-color: #ff9800;
+}
+
+.alert.danger {
+  background-color: #ff4747;
+}
+
+.close-alert {
+  color: #fff;
+  &:hover {
+    color: #000;
+  }
+}
+
+.topic-javascript {
+  .card-progress-1 {
+    background-color: #c25975;
+  }
+  .card-progress-2 {
+    background-color: #436eb2;
+  }
+  .card-progress-3 {
+    background-color: #4adb7d;
+  }
+}
+
+.topic-javascript {
+  .card-action-button {
+    &:hover,
+    &:focus {
+      border-color: #c25975;
+    }
+  }
+  .success {
+    &:focus,
+    &:hover {
+      border-color: #436eb2;
+    }
+  }
+  .grass {
+    &:focus,
+    &:hover {
+      border-color: #4adb7d;
+    }
+  }
+}
+
+.card-action-button,
+.card-action-info {
+  &:hover,
+  &:focus {
+    border-color: #dadee2;
+  }
+}
+
+
+.card-action:hover {
+  .play-icon {
+    color: #c25975;
+  }
+  .play-icon.success {
+    color: #436eb2;
+  }
+  .play-icon.grass {
+    color: #4adb7d;
+  }
+}
+
+.topic-javascript {
+  .button.primary {
+    background-color: #c25975;
+    border-color: #c25975;
+  }
+}
+
+.card-action.resume {
+  .button.success {
+    background-color: #436eb2;
+    border-color: #436eb2;
+  }
+  .button.grass {
+    background-color: #4adb7d;
+    border-color: #4adb7d;
+  }
+}
+
+.card-box {
+  color: #b2bac2;
+  &:not(.has-topic-background-color) {
+    background: #fff;
+  }
+}
+
+
+.track {
+  .card-box {
+    &:after,
+    &:before {
+      background: #fff;
+    }
+  }
+}
+
+.card-progress {
+  color: #fff;
+  background-color: #717b85;
+}
+
+.card-icon {
+  fill: #fff;
+}
+
+.track-icon {
+  color: #fff;
+}
+
+
+.card-stages {
+  li.current {
+    border-color: #fff;
+  }
+  li {
+    background-color: transparent;
+  }
+}
+
+.card-estimate {
+  color: #fff;
+}
+
+.add-javascript-background-color {
+  background-color: transparent !important;
+}
+
+.card-type {
+  color: #7b8b8e;
+}
+
+.card-title {
+  color: #4b5658;
+}
+
+.card-description-main {
+  color: #7b8b8e;
+}
+
+.button.primary:not(.has-topic-color) {
+  color: #fff;
+}
+
+.topic-javascript {
+  .button {
+    border-color: #c25975;
+    color: #c25975;
+  }
+}
+
+.card-action {
+  &:hover {
+    .card-tooltip-play {
+      color: #fff;
+    }
+    .salary-icon,
+    .building-icon {
+      color: #dadee2
+    }
+  }
+}
+
+.card-action-trailer {
+  &:before {
+    background: #384047;
+  }
+}
+
+.card-action-button-info-options {
+  background-color: transparent;
+}
+
+.play-icon {
+  color: #ebedef;
+}
+
+
+.card-tooltip {
+  background: #384047;
+  color: #fff;
+  p {
+    color: #97a3a6;
+  }
+  &:after {
+    background: #384047;
+  }
+}
+
+.card-tooltip-play {
+  p {
+    color: #fff;
+  }
+}
+
+.building-icon {
+  color: #ebedef;
+}
+
+.salary-icon {
+  color: #ebedef;
+}
