@@ -14,6 +14,8 @@ $min-479: "(min-width: 479px)";
 $min-460: "(min-width: 460px)";
 $max-347: "(max-width: 347px)";
 $min-348: "(min-width: 348px)";
+$min-575: "(min-width: 575px)";
+$max-575: "(max-width: 575px)";
 @media #{$max-768} {
   #provideEducation {
     img {
@@ -97,6 +99,12 @@ $min-348: "(min-width: 348px)";
           right: -11px;
         }
       }
+    }
+  }
+  #provideEducation {
+    h4,
+    p {
+      text-align: center
     }
   }
 }
@@ -270,6 +278,12 @@ $min-348: "(min-width: 348px)";
   .low-device-nav {
     display: none;
   }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    top: 35%;
+    padding-bottom: 30px;
+  }
 }
 
 @media #{$min-996} {
@@ -323,6 +337,12 @@ $min-348: "(min-width: 348px)";
     right: 0px;
     top: 0px;
   }
+  .m-t-100 {
+    margin: 100px;
+  }
+  .p-t-0 {
+    padding-top: 0;
+  }
 }
 
 @media #{$min-1200} {
@@ -339,6 +359,7 @@ $min-348: "(min-width: 348px)";
       border-right: 950px solid #d8d8d8;
       right: 0px;
       top: 0px;
+      z-index: 100;
     }
     &:after {
       border-bottom: 0px solid transparent;
@@ -420,5 +441,51 @@ $min-348: "(min-width: 348px)";
   }
   .card-actions {
     top: 205px;
+  }
+}
+
+@media #{$min-575} {
+  a.prevCircles {
+    position: absolute;
+    left: 70px;
+    top: 0;
+    z-index: 300;
+    padding: 50px;
+    margin-top: 40px;
+  }
+  a.nextCircles {
+    position: absolute;
+    right: 100px;
+    top: 0;
+    z-index: 300;
+    padding: 50px;
+    padding-right: 25px;
+    margin-top: 40px;
+  }
+  .circle-carousel-arrows {
+    font-size: 20px;
+    margin-top: -195px;
+    color: #2d2c2f;
+    font-size: 15px;
+  }
+}
+
+@media #{$max-575} {
+  a.prevCircles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    padding: 50px;
+    margin-top: 40px;
+  }
+  a.nextCircles {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 300;
+    padding: 50px;
+    padding-right: 50px;
+    margin-top: 40px;
   }
 }

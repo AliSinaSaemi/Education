@@ -2,7 +2,6 @@
 // orange 
 $orange: #e94f31;
 $mainOrange: #f34a2e;
-
 // black
 $black: #000;
 $softBlack: #1f1f21;
@@ -10,22 +9,17 @@ $dark: #2d2c2f;
 $softDark: #262626;
 $otherDark: #1a1a1b;
 $anotherDark: #181819;
-
 // green
 $darkGreen: #454c59;
-
 //white
 $darkWhite: #efefef;
 $nearWhite: #e4e4e4;
 $white: #ffffff;
-
 // gray
 $gray: #919191;
 $softGray: #929292;
-
 // blue
 $lightBlue: #4ec4c8;
-
 body {
   background-color: $dark;
 }
@@ -47,6 +41,10 @@ body {
 
 /* Content
 -----------------------------------------*/
+
+.text-white {
+  color: $white
+}
 
 p {
   color: $softGray;
@@ -94,6 +92,21 @@ div.spacer {
 
 .navbar a:hover i {
   color: $mainOrange;
+}
+
+.circle .fa {
+  color: $mainOrange;
+}
+
+.feature:hover {
+  .circle {
+    .fa {
+      color: $white;
+    }
+  }
+  .circle {
+    background-color: $mainOrange;
+  }
 }
 
 .closebtn {
@@ -154,12 +167,15 @@ input[type="radio"][readonly],
 input[type="checkbox"][readonly] {
   background-color: transparent;
 }
+
 div.panel_2 {
   background-color: $white;
 }
+
 .panel_2 p {
   color: $dark;
 }
+
 .control-group.warning .checkbox,
 .control-group.warning .radio,
 .control-group.warning input,
@@ -193,15 +209,18 @@ div.panel_2 {
   background-color: $mainOrange;
   color: $white;
 }
+
 .openbtn:hover {
   background-color: $dark;
   color: $white;
 }
+
 .item_img {
   float: none;
   margin: 0 0 30px 0;
   max-width: 100%;
 }
+
 #tabs ul li a {
   color: $mainOrange;
 }
@@ -270,6 +289,7 @@ span.checkbox label.checkbox-inner:before {
 .panel-title p {
   color: $white;
 }
+
 .panel-heading {
   color: $white;
   background-color: #f33d2e;
@@ -278,6 +298,7 @@ span.checkbox label.checkbox-inner:before {
 .panel-heading:hover {
   background-color: $dark;
 }
+
 .panel-title a {
   color: $white;
 }
@@ -342,53 +363,70 @@ span.checkbox label.checkbox-inner:before {
   padding: 20px;
 }
 
+
 /* Test for importing color element in this secton CALL CODE :0933 */
+
 hr.distincter {
   background-color: $anotherDark;
 }
+
 .closebtn {
   background-color: $otherDark;
 }
+
 #cssmenu > ul > li:first-child {
   background: $dark;
 }
+
 #cssmenu > ul > li:first-child:hover {
   background: $dark;
 }
+
 #cssmenu ul ul a {
   color: $white;
 }
+
 #cssmenu ul ul a:before {
   color: $orange;
 }
+
 #cssmenu ul ul a:hover {
   color: $orange;
 }
+
 .low-device-nav h1 a {
   color: $white;
 }
+
 hr.xxs-underline {
   border-color: $white;
 }
+
 .col-3-list a {
   color: $white;
 }
+
 .col-3-list a.active {
   color: $mainOrange;
 }
+
 .col-3-list a:hover {
   color: $mainOrange;
 }
+
 .multi-column-dropdown {
   color: $white;
 }
+
 .search-box h4 {
   color: $white;
 }
+
 .search-box input {
   background-color: $softBlack;
   color: $white;
 }
+
 .social-medias ul .bg-googleplus {
   background-color: #ef472b;
 }
@@ -396,9 +434,11 @@ hr.xxs-underline {
 .social-medias ul .bg-facebook {
   background-color: #2b78ef;
 }
+
 .dropdowner.disabled .carat {
   border-top-color: #999;
 }
+
 .panel {
   border-color: $white;
 }
@@ -406,69 +446,91 @@ hr.xxs-underline {
 #cssmenu {
   background-color: $dark;
 }
+
 hr.distincter {
   background-color: $anotherDark;
 }
+
 .closebtn {
   background-color: $otherDark;
 }
+
 #cssmenu > ul > li:first-child:hover {
   background: $dark;
 }
+
 #cssmenu > ul > li {
   background: $softBlack;
 }
+
 #cssmenu > ul > li:hover {
   background: #e84323;
 }
+
 #cssmenu > ul > li > a {
   color: $white;
 }
+
 #cssmenu ul ul {
   background: $dark;
 }
+
 #cssmenu ul ul li {
   background: $dark;
 }
+
 #cssmenu ul ul a {
   color: $white;
 }
+
 #cssmenu ul ul a:before {
   color: $orange;
 }
+
 #cssmenu ul ul a:hover {
   color: $white;
 }
+
 .low-device-nav h1 a {
   color: $white;
 }
+
 .col-3-list a {
   color: $white;
 }
+
 .col-3-list a.active {
   color: $mainOrange;
 }
+
 .multi-column-dropdown {
   color: $white;
 }
+
 .search-box {
   background-color: $dark;
 }
+
 .search-box h4 {
   color: $white;
 }
+
 .search-box input {
   background-color: $softBlack;
   color: $white;
 }
+
 .search-box button {
-  background-color: $mainOrange;;
+  background-color: $mainOrange;
+  ;
   color: $white;
 }
+
 .search-box button:hover {
   background-color: $softBlack;
   color: $white;
 }
+
 .account-mini-page span.checkbox {
   margin-right: 10px;
   background-color: $softBlack;
@@ -523,7 +585,6 @@ ul .bg-googleplus a:hover i {
   background-color: #428bca;
 }
 
-
 .progress-bar {
   background-color: #0090D9;
 }
@@ -539,7 +600,6 @@ div.progress-horizantal p {
 #footer-wrapper {
   background-color: $dark;
 }
-
 
 .social-medias ul li a {
   color: $white;
@@ -567,7 +627,6 @@ div.progress-horizantal p {
 }
 
 // tracks.html
-
 .alert {
   background-color: #f44336;
   color: #fff;
@@ -646,7 +705,6 @@ div.progress-horizantal p {
   }
 }
 
-
 .card-action:hover {
   .play-icon {
     color: #c25975;
@@ -684,7 +742,6 @@ div.progress-horizantal p {
   }
 }
 
-
 .track {
   .card-box {
     &:after,
@@ -706,7 +763,6 @@ div.progress-horizantal p {
 .track-icon {
   color: #fff;
 }
-
 
 .card-stages {
   li.current {
@@ -773,7 +829,6 @@ div.progress-horizantal p {
 .play-icon {
   color: #ebedef;
 }
-
 
 .card-tooltip {
   background: #384047;
