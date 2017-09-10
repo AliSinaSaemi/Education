@@ -2875,6 +2875,15 @@ div.progress-horizantal p {
   background-color: #436eb2; }
 .topic-javascript .card-progress-3 {
   background-color: #4adb7d; }
+.topic-javascript .card-progress-special {
+  background-color: #2d2c2f; }
+
+.card-progress-special i,
+.card-progress-special .card-estimate {
+  color: #ffbf00; }
+
+.card-progress-special .card-stages li.current {
+  border-color: #ffbf00; }
 
 .topic-javascript .card-action-button:hover, .topic-javascript .card-action-button:focus {
   border-color: #c25975; }
@@ -2882,6 +2891,8 @@ div.progress-horizantal p {
   border-color: #436eb2; }
 .topic-javascript .grass:focus, .topic-javascript .grass:hover {
   border-color: #4adb7d; }
+.topic-javascript .gold:focus, .topic-javascript .gold:hover {
+  border-color: #ffbf00; }
 
 .card-action-button:hover, .card-action-button:focus,
 .card-action-info:hover,
@@ -2894,6 +2905,8 @@ div.progress-horizantal p {
   color: #436eb2; }
 .card-action:hover .play-icon.grass {
   color: #4adb7d; }
+.card-action:hover .play-icon.gold {
+  color: #ffbf00; }
 
 .topic-javascript .button.primary {
   background-color: #c25975;
@@ -2905,6 +2918,10 @@ div.progress-horizantal p {
 .card-action.resume .button.grass {
   background-color: #4adb7d;
   border-color: #4adb7d; }
+.card-action.resume .button.gold {
+  background-color: #2d2c2f;
+  border-color: #2d2c2f;
+  color: #fff; }
 
 .card-box {
   color: #b2bac2; }

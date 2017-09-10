@@ -674,6 +674,18 @@ div.progress-horizantal p {
   .card-progress-3 {
     background-color: #4adb7d;
   }
+  .card-progress-special {
+    background-color: #2d2c2f;
+  }
+}
+
+.card-progress-special i,
+.card-progress-special .card-estimate
+ {
+  color: #ffbf00;
+}
+.card-progress-special .card-stages li.current {
+      border-color: #ffbf00;
 }
 
 .topic-javascript {
@@ -693,6 +705,13 @@ div.progress-horizantal p {
     &:focus,
     &:hover {
       border-color: #4adb7d;
+    }
+    
+  }
+  .gold {
+    &:focus,
+    &:hover {
+      border-color: #ffbf00
     }
   }
 }
@@ -715,6 +734,9 @@ div.progress-horizantal p {
   .play-icon.grass {
     color: #4adb7d;
   }
+    .play-icon.gold {
+    color: #ffbf00;
+  }
 }
 
 .topic-javascript {
@@ -732,6 +754,11 @@ div.progress-horizantal p {
   .button.grass {
     background-color: #4adb7d;
     border-color: #4adb7d;
+  }
+    .button.gold {
+    background-color: #2d2c2f;
+    border-color: #2d2c2f;
+      color: #fff;
   }
 }
 
