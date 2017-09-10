@@ -2051,7 +2051,9 @@ a.carousel-control.right {
   border: 0; }
 
 /* Animation */
-.control-box, a.carousel-control, .carousel-indicators li {
+.control-box,
+a.carousel-control,
+.carousel-indicators li {
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
   -ms-transition: all 250ms ease;
@@ -2084,6 +2086,258 @@ a.carousel-control.right {
 .carousel-indicators li.active {
   background: #fff;
   margin: 0 3px; }
+
+.carousel-inner .item:before,
+.carousel-inner .item:after {
+  content: '';
+  position: absolute;
+  border: 46px solid transparent; }
+
+.carousel-inner .item:after {
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  right: 0;
+  top: 0; }
+
+.carousel-inner .item:after {
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  right: 0;
+  top: 0; }
+
+.carousel-inner .item:before {
+  border-bottom: 0px solid transparent;
+  border-right: 0px solid transparent;
+  left: 0;
+  bottom: 0; }
+
+.carousel-inner .item.red:before {
+  border-left: 856px solid red; }
+
+.carousel-inner .item.blue:before {
+  border-left: 856px solid blue; }
+
+.carousel-inner .item.green:before {
+  border-left: 856px solid green; }
+
+.carousel-inner .item.pink:before {
+  border-left: 856px solid pink; }
+
+.carousel-inner .item.red:after {
+  border-right: 856px solid red; }
+
+.carousel-inner .item.blue:after {
+  border-right: 856px solid blue; }
+
+.carousel-inner .item.green:after {
+  border-right: 856px solid green; }
+
+.carousel-inner .item.pink:after {
+  border-right: 856px solid pink; }
+
+/* line 2, ../sass/styles.scss */
+.carousel-wrapper {
+  position: relative;
+  height: 307px;
+  width: 760px;
+  margin: auto; }
+
+.carousel-wrapper .carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  /* Let's use using some media queries to resize the arrows
+  on smaller devices.*/ }
+
+/* line 21, ../sass/styles.scss */
+.carousel-wrapper .carousel-item .arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background: url("../../../images/banenrs-about/left-arrow.png") 50% 50%/50px no-repeat; }
+
+/* line 31, ../sass/styles.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+  left: 10px; }
+
+/* line 35, ../sass/styles.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+  right: 10px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+@media (max-width: 480px) {
+  /* line 47, ../sass/styles.scss */
+  .carousel-wrapper .carousel-item .arrow,
+  .carousel-wrapper .carousel-item.light .arrow {
+    background-size: 75%;
+    background-position: 10px 50%; } }
+/* line 54, ../sass/styles.scss */
+.carousel-wrapper [id^="target-item"] {
+  display: none; }
+
+/* line 58, ../sass/styles.scss */
+.carousel-wrapper .item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../../../images/banenrs-about/banner1.jpg") no-repeat scroll 100%; }
+
+/* line 64, ../sass/styles.scss */
+.carousel-wrapper .item-2 {
+  background: url("../../../images/banenrs-about/banner2.jpg") no-repeat scroll 100%; }
+
+/* line 65, ../sass/styles.scss */
+.carousel-wrapper .item-3 {
+  background: url("../../../images/banenrs-about/banner3.jpg") no-repeat scroll 100%; }
+
+/* line 66, ../sass/styles.scss */
+.carousel-wrapper .item-4 {
+  background: url("../../../images/banenrs-about/banner4.jpg") no-repeat scroll 100%; }
+
+/* line 67, ../sass/styles.scss */
+.carousel-wrapper .item-5 {
+  background: url("../../../images/banenrs-about/banner5.jpg") no-repeat scroll 100%; }
+
+/* line 71, ../sass/styles.scss */
+.carousel-wrapper h2 {
+  color: #fff; }
+
+/* line 72, ../sass/styles.scss */
+.carousel-wrapper p {
+  color: #fff;
+  margin: 0; }
+
+.carousel-wrapper h2,
+.carousel-wrapper p {
+  text-align: center; }
+
+/* line 75, ../sass/styles.scss */
+.carousel-wrapper *:target ~ .item-1 {
+  opacity: 0; }
+
+/* line 79, ../sass/styles.scss */
+.carousel-wrapper #target-item-1:target ~ .item-1 {
+  opacity: 1; }
+
+/* line 84, ../sass/styles.scss */
+.carousel-wrapper #target-item-2:target ~ .item-2,
+.carousel-wrapper #target-item-3:target ~ .item-3,
+.carousel-wrapper #target-item-4:target ~ .item-4,
+.carousel-wrapper #target-item-5:target ~ .item-5 {
+  z-index: 3;
+  opacity: 1; }
+
+/* line 89, ../sass/styles.scss */
+.carousel-wrapper img {
+  max-width: 100%; }
+
+@media only screen and (max-width: 760px) {
+  /* line 95, ../sass/styles.scss */
+  .carousel-wrapper {
+    width: 100%; } }
+.overview-text-l {
+  text-align: right; }
+
+.overview-feature-r,
+.overview-feature-l {
+  position: relative; }
+
+.overview-circle-l,
+.overview-circle-r {
+  box-shadow: 0px 0 0 1px #7a8691;
+  border-radius: 150px;
+  height: 50px;
+  position: relative;
+  width: 50px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+
+.overview-circle-r .html5 {
+  top: 10px;
+  font-size: 2.2em;
+  left: -11px;
+  color: #f34a2e; }
+
+.overview-circle-r .html5,
+.overview-circle-r .bootsrap,
+.overview-circle-r .jquery,
+.overview-circle-l .map,
+.overview-circle-l .star,
+.overview-circle-l .support {
+  position: relative; }
+
+.overview-circle-l:after,
+.overview-circle-r:after {
+  box-shadow: 0 0 0 4px #7a8691;
+  content: "";
+  position: absolute;
+  left: -0.5px;
+  top: -0.5px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border-radius: 50%; }
+
+.overview:hover .overview-circle-l:after,
+.overview:hover .overview-circle-r:after {
+  box-shadow: 0 0 0 7px #7a8691;
+  opacity: 1;
+  left: -10px;
+  top: -10.5px;
+  margin: auto;
+  width: 70px;
+  height: 70px; }
+
+.overview-circle-l:after,
+.overview-circle-r:after {
+  box-shadow: 0 0 0 4px #7a8691;
+  content: "";
+  position: absolute;
+  left: -0.5px;
+  top: -0.5px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border-radius: 50%; }
+
+.overview:hover .overview-circle-r .html5 {
+  color: #fff; }
+
+.overview:hover .overview-circle-l,
+.overview:hover .overview-circle-r {
+  box-shadow: 0 0 0 0 #2b3e50;
+  background-color: #f34a2e; }
+
+.jumbotron input {
+  border: none;
+  padding: 13px;
+  width: 300px; }
+
+/*Author: Kosmom.ru*/
+.loading {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+  animation: 2s linear 0s normal none infinite progress-bar-stripes;
+  -webkit-animation: progress-bar-stripes 2s linear infinite; }
 
 /* Footer 
 ----------------------------------*/
@@ -2928,9 +3182,9 @@ div.progress-horizantal p {
     display: none; }
 
   .carousel-caption {
-    left: 20%;
+    left: -20%;
     right: 20%;
-    top: 35%;
+    top: 30%;
     padding-bottom: 30px; } }
 @media (min-width: 996px) {
   .content:before, .content:after {
