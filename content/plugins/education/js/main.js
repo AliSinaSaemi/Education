@@ -16,6 +16,14 @@ function closeNav() {
   document.getElementById("cssmenu").style.opacity = "0";
 }
 
+// Carousel Auto-Cycle
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
+
+
 var close = document.getElementsByClassName("close-alert");
 var i;
 for (i = 0; i < close.length; i++) {
