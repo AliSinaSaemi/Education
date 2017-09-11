@@ -2035,6 +2035,45 @@ div.progress-horizantal {
   }
 }
 
+.spacer-tracks {
+  width: 50px;
+  height: 70px;
+  text-align: center;
+  background-color: #1e3252;
+  color: #fff;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+
+.spacer-tracks i {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.few-steps-success {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.few-steps-success li {
+  margin-bottom: 15px;
+  color: #121e31;
+}
+
+.cup-success {
+  text-align: center;
+}
+
+.cup-success h5 {
+  color: #fff;
+  margin-bottom: 0
+}
+
+.cup-success h5:hover {
+  color: #fff;
+}
+.cup-success img {
+  width: 200px;
+}
 .jasgrid {
   padding: 0;
 }
@@ -2657,6 +2696,7 @@ a.carousel-control,
   line-height: 36px;
   width: 100px;
   height: 100px;
+  
   margin: 40px auto;
   border-radius: 50%;
   -webkit-transition: all 300ms 0s ease;

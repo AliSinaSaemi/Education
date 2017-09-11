@@ -1864,6 +1864,40 @@ div.progress-horizantal .progress {
     left: 50%;
     border-radius: 0 0 3px 0; }
 
+.spacer-tracks {
+  width: 50px;
+  height: 70px;
+  text-align: center;
+  background-color: #1e3252;
+  color: #fff;
+  border-radius: 50px;
+  margin-bottom: 25px; }
+
+.spacer-tracks i {
+  margin-top: 25px;
+  font-size: 25px; }
+
+.few-steps-success {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.few-steps-success li {
+  margin-bottom: 15px;
+  color: #121e31; }
+
+.cup-success {
+  text-align: center; }
+
+.cup-success h5 {
+  color: #fff;
+  margin-bottom: 0; }
+
+.cup-success h5:hover {
+  color: #fff; }
+
+.cup-success img {
+  width: 200px; }
+
 .jasgrid {
   padding: 0; }
 
@@ -2957,8 +2991,13 @@ div.progress-horizantal p {
   .card-box:not(.has-topic-background-color) {
     background: #fff; }
 
+.cup-success:not(.has-topic-background-color) {
+  background: #207b90; }
+
 .track .card-box:after, .track .card-box:before {
   background: #fff; }
+.track .cup-success:after, .track .cup-success:before {
+  background: #207b90; }
 
 .card-progress {
   color: #fff;

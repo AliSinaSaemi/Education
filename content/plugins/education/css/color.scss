@@ -680,12 +680,12 @@ div.progress-horizantal p {
 }
 
 .card-progress-special i,
-.card-progress-special .card-estimate
- {
+.card-progress-special .card-estimate {
   color: #ffbf00;
 }
+
 .card-progress-special .card-stages li.current {
-      border-color: #ffbf00;
+  border-color: #ffbf00;
 }
 
 .topic-javascript {
@@ -706,7 +706,6 @@ div.progress-horizantal p {
     &:hover {
       border-color: #4adb7d;
     }
-    
   }
   .gold {
     &:focus,
@@ -734,7 +733,7 @@ div.progress-horizantal p {
   .play-icon.grass {
     color: #4adb7d;
   }
-    .play-icon.gold {
+  .play-icon.gold {
     color: #ffbf00;
   }
 }
@@ -755,10 +754,10 @@ div.progress-horizantal p {
     background-color: #4adb7d;
     border-color: #4adb7d;
   }
-    .button.gold {
+  .button.gold {
     background-color: #2d2c2f;
     border-color: #2d2c2f;
-      color: #fff;
+    color: #fff;
   }
 }
 
@@ -769,11 +768,21 @@ div.progress-horizantal p {
   }
 }
 
+.cup-success:not(.has-topic-background-color) {
+  background: #207b90;
+}
+
 .track {
   .card-box {
     &:after,
     &:before {
       background: #fff;
+    }
+  }
+  .cup-success {
+    &:after,
+    &:before {
+      background: #207b90;
     }
   }
 }
